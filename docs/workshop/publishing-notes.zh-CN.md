@@ -37,6 +37,14 @@ Steam 上传 API 的介绍上限为 8,000 字节，标题上限为 128 字节加
 
 ## 展示图
 
+已生成一张香草风格宣传封面，包含 Local Rail 标题、中英文客货运副标题、Pre-Alpha 与 RimWorld 1.7 标记，以及小列车、乘客、货物、站台和仓库场景：
+
+- 推荐上传：`D:\rimworld_mod\docs\artwork\local-rail-workshop-cover.jpg`，1254×1254，437,313 字节（约 427 KiB）。
+- PNG 原图：`D:\rimworld_mod\docs\artwork\local-rail-workshop-cover.png`，1254×1254，2,820,866 字节。
+- [生成提示词与制作记录](../artwork/cover-generation.md)。图片由内置 image_gen 生成；JPEG 只做同尺寸格式导出。
+
+封面是 AI 生成的宣传插画，建筑与人物比例是插画处理，发布时继续保留正文中的 AI 内容披露。可配合下面的实机截图展示当前游戏实现。
+
 建议先用能同时展示车站、轨道和车载货物的画面，再补充路线与界面。当前可选截图：
 
 1. `D:\rimworld_mod\Validation\rail-empty-automatic-cargo.png`：自动列车零乘客，运送钢铁与布料，检视窗显示实际数量。
@@ -44,7 +52,7 @@ Steam 上传 API 的介绍上限为 8,000 字节，标题上限为 128 字节加
 3. `D:\rimworld_mod\Validation\rail-rotated-stations.png`：六种旋转后的客站／仓库及建造预览，来自 0.9 验证，图中建筑功能在 0.10 保留。
 4. `D:\rimworld_mod\Validation\rail-travel-diagnostic.png`：自动乘车诊断、接驳与时间估算。
 
-这些是现有实机截图，部分带开发模式图标和测试地图背景，可作为初次发布资料。若重新拍展示图，建议关闭开发模式图标和无关教学提示，用正常殖民地场景展示；这不是本轮已生成的新封面。
+这些是现有实机截图，部分带开发模式图标和测试地图背景，可作为初次发布资料。若重新拍展示图，建议关闭开发模式图标和无关教学提示，用正常殖民地场景展示。
 
 ## 首次发布更新说明
 

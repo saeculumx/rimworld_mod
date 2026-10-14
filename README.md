@@ -1,154 +1,140 @@
-# Local Rail：RimWorld 1.7 地图内轨道运营
+# Local Rail
 
-**0.10.0 · Pre-Alpha**。针对本机 **1.7.4977 rev1248 / Waylith CLR 10.0.10** 编译，无 DLC 依赖，依赖 Harmony 1.7。
+**Automatic passenger and freight transport for RimWorld 1.7 · 0.10.0 Pre-Alpha**
 
-创意工坊发布文案：[发布资料与中英文简介](docs/workshop/publishing-notes.zh-CN.md)、[中文版正文](docs/workshop/description.zh-CN.bbcode.txt)、[英文版正文](docs/workshop/description.en.bbcode.txt)、[精简中英合并版](docs/workshop/description.bilingual.bbcode.txt)。正文使用 Steam 排版标记，三份介绍均按上传字段的 UTF-8 字节上限核对。
+[简体中文](docs/README.zh-CN.md) · [Player guide / 玩家指南](docs/22-player-guide.zh-CN.md) · [Workshop publishing material](docs/workshop/publishing-notes.zh-CN.md)
 
-提供单、双、四站台建筑、双轨模块、双轨门和单／双／四站台货运仓库，2–16 站往返／环线，名称与颜色，底部轨道管理标签页，以及数字输入／自动停站。每条路线一辆常驻列车，最多四个客位、12 格货物；可以选择货运专列或客货两用。轨道、车站和仓库继续免费，保留施工工时。金属列车门消耗材料，无电力、燃料或研究要求。
+<p align="center">
+  <img src="docs/artwork/local-rail-workshop-cover.jpg" width="640" alt="Local Rail: vanilla-inspired passenger and freight railway cover" />
+</p>
 
-## 长距离乘车与列车类型
+*AI-generated promotional artwork. See the in-game screenshots below for the current implementation.*
 
-默认车站接驳范围从 24 格扩大到 80 格，模组设置可选 24／48／64／80／96。接驳允许可开启的普通门和安全对角步行，仍遵守允许区域、墙角与危险限制。开启“偏好列车”后，接驳步行合计允许到直接步行的 80%，全程含候车允许到直接步行估算的两倍；关闭后继续要求至少节省 25% 且 120 tick。自动乘车仅在受支持工作的移动阶段规划，征召状态不自动通勤。
+Connect homes, farms, mines, and warehouses with a railway on one colony map. Colonists automatically board suitable trains during supported long-distance jobs and continue their work after arrival. Automatic trains also deliver warehouse inventory with nobody aboard.
 
-选中正在步行的殖民者，点击“乘车诊断”，可查看候选车站、拒乘原因以及步行、接驳、车程、候车估算；“重新评估”只查看，不更改工作。
+This is a playable **Pre-Alpha**. Core transport and save/load behavior have been tested, while artwork, balance, interaction, and compatibility remain in development.
 
-路线编辑器颜色右侧可选择普通列车或自动列车，管理页显示类型。普通列车载客及运送人工交付货物，不收集库存。自动列车额外按仓库默认目的站或分类发货规则收集库存，零乘客也装卸运行；可选客货两用或货运专列。两种均为四客位、12 格货仓，无司机、电力或燃料要求，复用原占位素材，以淡暖色／淡冷色区分。更改类型保留原车与货物；路线重新确认时已有乘客恢复原工作，再按新路线规划。
+## Features
 
-选择货运仓库 → “库存默认目的站” → 选择路线及具体目标站台。殖民者通过原版搬运把资源送入仓库，自动列车到站时装载库存，到目标站台卸货。无需添加分类规则即可运输全部可发库存；规则列表按首个有效匹配规则优先处理，其他库存使用默认目的站。收货站可以保持默认无目的站。卸货仍遵守收货过滤器与容量，失败保留货物并发不暂停的 info 消息；已到货默认不自动再次发出。
+- Automatic commuting for player-controlled human colonists, including resources they are carrying.
+- One permanent train per route, with **four seats and twelve cargo stack slots**.
+- **Ordinary trains** for passengers and manually deposited freight; **automatic trains** also collect warehouse inventory, with mixed or freight-only modes. Both operate without a driver.
+- Rotatable **one-, two-, and four-platform** passenger stations and freight warehouses.
+- **2–16 stop** shuttles and physically closed loops, route names/colors, direction arrows, and exact platform selection.
+- A bottom **Rail** management tab for creating, editing, locating, pausing, and removing routes.
+- Typed dwell times or automatic minimum/maximum dwell, plus colonist travel diagnostics.
+- Warehouse default destinations and item-based dispatch rules. Full or rejecting destinations keep cargo aboard for another visit and notify without pausing.
+- Straight and diagonal rails, double-track modules, and metallic single/double-track automatic doors.
+- Actual cargo icons, counts, passenger names, and a twelve-slot cargo window.
 
-## 折返运营与旋转
+## Requirements and installation
 
-往返路线允许按照站序回走本路线的轨道，例如同楼 4 号站台 → 2 号站台 → 远端站台。列车按各次经过的行程索引运行，保持停靠、自动乘车、货运和读档一致。不同路线仍不能共用轨道格；环线需要实际闭合。候车成本仍参与自动乘车判断，预计耗时过长时殖民者会继续步行。旧车站按原东西向布局迁移，保留站台编号与路线引用。
+- **RimWorld 1.7**. Tested on **1.7.4977 rev1248 / Waylith CLR 10.0.10** on Windows.
+- [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077), with its 1.7 assembly. Load it before Local Rail.
+- No DLC or additional vehicle framework required. English and Simplified Chinese are included.
 
-## 地图上选择站台
+For a packaged copy, extract `LocalRail-0.10.0-rw1.7-poc.zip` and place its `LocalRail` folder in `<RimWorld>/Mods/`. Enable Harmony and Local Rail in the game's Mods menu, then restart the game. The ZIP is created in `dist/` by the build script; that directory is excluded from Git.
 
-路线编辑器的“添加停站”或已有停站按钮会切换为窄侧栏。此时可平移、缩放地图，直接点击车站内的对应轨道行选站台。地图编号与候选列表一致；列表的“定位”按钮移到该站台。已选和断开的站台仍显示，但禁止重复／未连通选择。黄色标记指示当前站台；右键、Esc 或返回保留草稿并退出选择。路线中的 ◎ 按钮可以直接定位该停站。
+For a source checkout, build first and install the resulting `Mod/LocalRail` folder. The optional `install.ps1` helper is for a fresh installation and refuses to overwrite an existing mod directory.
 
-选中列车后可打开“列车货仓 · 12 格”，查看 4×3 格子和目标站台。每格一个原版物品堆栈；受阻货物继续占格，下次访问重试。车顶显示最多六种实际货物图标；选中后显示名称与数量，检视窗和货仓窗可查看完整清单。
+## Quick start
 
-## 建筑与接轨
+### Passenger service
 
-“杂项 / Misc”有三个入口：**单站台 3×3、双站台 5×5、四站台 5×9**。建造时可用原版旋转键切换轨道方向；默认东西向贯通，站台编号随旋转改变，默认由南向北，轨道之间留一格步行带。每条站台轨道的左右端接外部轨道；不要在建筑内部叠铺。
+1. Build at least two stations under **Misc**, then connect the ends of their chosen platform tracks. Stations and rail doors already include rails; do not duplicate tracks inside their footprints.
+2. Open **Rail**, create a route, choose stations and exact platforms in order, and select a train type, name, and color.
+3. Choose a shuttle or loop. A loop needs an actual connection from its last stop back to its first; shuttles may retrace their own track segments.
+4. Confirm the route. Enable automatic travel and rail preference in mod settings. Eligible undrafted colonists will approach, wait, and board automatically.
+5. If a colonist keeps walking, open their **Rail travel decision** diagnostic. Station access defaults to **80 tiles** and is adjustable; job eligibility, safe access, and waiting costs still matter.
 
-不同站台属于同一建筑也不自动相连。连接表从各站台的真实轨道格分别计算；需要换线时，在建筑外铺设实际连接轨道。默认“斜向轨道线”可以直接横竖或斜向拖动；铺设样式仍提供原版横竖 Line，可点击样式图标切换。斜轨与直轨使用连续转角绘制。
+### Unmanned freight
 
-轨道和站台是可步行的实体建筑，有生命值并占用建筑格，不能与墙、其他实体建筑或另一个轨道叠放。按原版流程可以提前规划蓝图，但工人必须先清除阻挡树木并搬开物品，再完成轨道；建成后禁止植物在轨道上生长。允许地下电缆穿过轨道和门，保持原版布线习惯。普通轨道、客运站台和列车门不能作为堆货格，货物在站外附近卸出；旧地图上已覆盖轨道的石块或杂物需要搬走。低承载地形和深水不能直接铺设，需要先造可承载的桥。不同可承载地形的边界不影响轨道连通。新增低饱和路基、深轨边及浅钢轨，轨道平面无顶点倾斜，保持香草风格和连续接缝。
+1. Create a route serving freight warehouses and select an **Automatic train**.
+2. Set the sending warehouse's **Default inventory destination** to a platform on that route. Use dispatch rules for item-specific or multiple destinations.
+3. Colonists haul resources into the warehouse through normal hauling work. The train collects stock during stops, even with zero passengers.
+4. Cargo unloads at its designated platform, respecting filters and capacity. Received cargo is not automatically re-exported by default; colonists can haul it into suitable ordinary storage.
 
-旧单格站只为旧存档保留，不再提供新建入口。
+## Current scope and limitations
 
-## 金属列车门、双轨与封闭走廊
+| Area | Current behavior |
+| --- | --- |
+| Construction | Tracks, passenger stations, and warehouses have no resource cost but require construction work. Metallic rail doors cost materials. No power, fuel, or research requirements yet. |
+| Track sharing | One train per route. Different routes cannot share track cells. Platforms connect independently and need real outside tracks to switch lines. |
+| Travel scope | One colony map. No world-map rail, automatic route transfers, shared-track signaling, passing traffic, or multiple trains per route. |
+| Boarding | Supported job movement only. Drafted, downed, or mentally affected pawns, map-exit jobs, and carrying living pawns are excluded. Unsuitable access or waiting costs may still favor walking. |
+| Collision and topology | Full-width train collision is not implemented. Rail doors allow horizontal/vertical passages. Some complex multi-loop stop orders may be rejected by current path selection. |
+| Compatibility | Main features tested with Core and Harmony. Other job/pathfinding/vehicle mods and large mod collections are not comprehensively tested. |
 
-**“结构 / Structure”**提供金属自动列车门和双轨自动列车门。单门一格、40 单位金属；双门三格宽、80 单位金属。接受所有 Metallic 材料，耐久、颜色、价值和速度使用原版 Stuff 计算；原版玻璃钢最耐久，不限制第三方金属的额外系数。单门复用原版素材，双门使用原创香草风格灰色滑门图；两者使用原版声音、房间分隔、温度和殖民者寻路。无需电力、燃料或研究。
+## Save compatibility and backups
 
-门自带轨道。先拆除门占地内的普通轨道、双轨模块或墙，再建门。双门默认横向跨度、供南北轨道通过；**东西向双线需按旋转键使门朝东／西**，两条轨道相隔一格，中间可步行。跨度两端接墙，否则按原版多格门规则不能正常关闭。两辆车使用独立轨道，共享整扇门的开合和车尾保护。
+Routes and cargo in transit support saving and loading. A **0.9 save upgraded to 0.10** has been tested. Adding to arbitrary existing saves, downgrading, and removal have not been comprehensively tested. Future Pre-Alpha updates may change definitions or save data; lossless migration of every old save is not guaranteed.
 
-“杂项”新增 **3×3 双轨模块**，横向两条轨道，间隔一格；旋转后为南北向。拖动每三格放一个模块，不重叠占地。只沿模块的轨道方向接入，两条线路保持独立，侧向贴放不会自动换轨。转弯、斜向和换线使用模块外的单轨，模块端先接一格直线单轨再转弯。
+**Before first adding, updating, or removing the mod, make a separate manual backup outside your autosave rotation.** Test on a copy and retain game/mod versions and your mod list. Avoid removing the mod while rail buildings, passenger trips, or cargo in transit remain. Clearing those does not establish that uninstalling is safe.
 
-列车按前方各轨段的实际游戏 ticks 提前请求开门，未完全开足时停车，包含车头的视觉长度检查。空车也自动开门；门保持打开到车尾通过后关闭。暂停/故障列车停在门范围内时保持门打开，读档后重新建立保护。禁止通行时列车等候，乘客留车；解除禁止后重试。被车体占用的门即使被禁止也不会夹关到车内。
+## In-game screenshots
 
-门用于直线水平或垂直通道，不允许斜穿门角。它分隔普通房间；开门时仍遵守原版温度交换规则，不能保证两侧温度完全独立。车辆仍以中心格运行，尚未实现宽车体的完整物理碰撞或门信号联锁。
+The following captures come from isolated in-game validation maps, with development overlays visible:
 
-## 仓库自动货运
+| Empty automatic train carrying stock | Route editor and train types |
+| --- | --- |
+| ![Unmanned train carrying steel and cloth](Validation/rail-empty-automatic-cargo.png) | ![Named route and automatic train selection](Validation/rail-train-types.png) |
 
-“杂项”提供 **单站台 3×3、双站台 5×5、四站台 5×9** 货运仓库。储存格只在轨道之间和外缘：分别 6／15／25 格，每格最多三堆。放置预览和蓝图逐行绘制完整布局。默认接受全部可储存物品，包括尸体；储存筛选与实际接收一致，避免反复失败的搬运工作。点击仓库的原版“储存”标签可自定义过滤器和搬运优先级，默认启用自动优先级：收货中转为低，有启用发货规则时优先集货，已卸货物在混合站仍按低优先级搬出。自动集货仓不会抢回已卸物品，堆栈拆分和合并保留到货标记。修改原版优先级会转为手动，也可通过仓库按钮关闭自动管理。旧默认优先按用途迁移，其他自定义优先级和筛选保留。
+[Travel diagnostic](Validation/rail-travel-diagnostic.png) · [Rotatable station layouts](Validation/rail-rotated-stations.png)
 
-先在“轨道”页建立经过仓库的路线，在路线编辑器选择“货运专列”或“客货两用”。专列不会接受自动乘客；旧路线默认自动列车、客货两用，保留原货运能力。然后选中仓库点击“自动发货规则”，或从管理页“车站”页打开：
+## Build from source
 
-1. 添加发货目的地，选择具体路线、本站台和目的站台。
-2. 每条规则选择单种货物或全部接受的货物；同一目的地允许配置多条类型规则。
-3. 可启停、删除、修改路线／目的地，或用上下箭头改变优先顺序。最多 32 条，按首个匹配规则处理；列表滚动，长名称有完整提示。
-4. 列车停站后先卸后装，每 30 ticks 处理一堆真实库存，固定 12 格，不需要逐批右键装车。
+The current project targets **`net10.0`**. Use a [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0), a local RimWorld 1.7 installation, and Harmony's 1.7 `0Harmony.dll`. The existing scripts use Windows PowerShell.
 
-每批目的站台固定，其他目的地的货物继续随车，到其对应站台卸货。仓库只卸到自己的储存格并遵守过滤器、原版堆叠与容量，不把拒收货物丢到门外。可部分卸货，未卸部分保留。满仓、禁止通行、格子占用或拒收时，该批本次访问不再重复尝试，列车按正常停站规则发车，下次访问重试。发出原版中性消息并写 INFO 日志，不发暂停信件；同一运行会话内，同一路线＋目标站台每游戏日最多提示一次。
-
-收到的货物默认不再自动发出，避免 A→B→A 循环；明确需要中转时开启“转运接收货物”，并检查规则。接收物与既有库存合并后，整个合并堆视为接收库存；搬出仓库后解除标记。该开关不会自动计算跨路线换乘或多跳目的地。普通客运站仍支持旧手动货运流程。
-
-拆除仓库保留原物品，超过地面容量的堆由原版移到附近；经过该仓库的路线因站点缺失暂停。规则、过滤器、优先级、接收标记、列车类型及真实货物均保存。
-
-列车使用新的俯视占位图；四个座位分离，乘客复用原版人物和衣物绘制树，仅在乘坐时缩小世界贴图，人物肖像不缩放。手持资源仍在原 carryTracker 中，乘坐时在对应座位旁显示小图标。乘客不再在车上投射步行影子或挤在一起的姓名标签；列车检查信息显示乘客名单，下车恢复普通绘制。
-
-## 统一管理与路线
-
-1. 打开底部 **“轨道 / Rail”** 标签。
-2. 在“路线”页创建或编辑路线，输入名称、选择颜色和往返／环线类型。
-3. 添加按顺序行驶的 **车站＋具体站台**。点击停站名称可换站台／车站；上下箭头调整顺序，× 删除。最多 16 站，列表可滚动。
-4. 往返线到两端折返。环线必须有实际的末站→首站闭合段，可选择正向或反向；不会用原路折返冒充环线。
-5. 地图显示路线颜色和方向箭头；编辑时显示编号和停站标记。管理页可勾选“地图显示所有路线颜色”。列车带对应颜色标识。
-6. 管理页可以搜索、暂停／恢复、编辑、定位和撤销。撤销需确认，并把车载货物放回地图。
-
-**轨道占用规则**：每条路线一辆车，每个轨道格由一条路线占用。不同路线可位于同一连通路网，但路径不能重叠。多站台可以运营独立线路。配置时说明占用路线；轨道改动导致路径重叠时暂停冲突路线。暂停或故障车仍有实际占格，其他车不能驶入。
-
-环线路径不重复格子，末格通过闭合边回到首格；往返路线允许回走本路线的轨段。允许同一建筑的不同站台出现在同一条路线，但必须有真实外部轨道连接。
-
-确认修改后，乘客恢复原工作；列车当前位置若不在新路线内，会保留原车并移到新首站。仍有有效目的站台的货物保留，失去目的站台的货物安全放回。取消编辑不修改路线与时间。
-
-## 独立站台与停站时间
-
-“车站”页逐站台显示西／东接入口、轨道连通的其他站台、使用路线和停站设置。连接表报告轨道拓扑；墙、门等实际阻塞会在路线运行状态中报告。
-
-停站设置使用游戏秒数字输入，允许小数和快捷值。手动范围 **0.5–120 秒**，原有手动停站时间会保留。自动模式预设最少 **2 秒**、最长 **15 秒**，可修改最少和最长秒数；最少不能大于最长。界面只启用当前模式的输入字段，无效输入不能保存。
-
-自动停站先下客，再按候车顺序每 15 ticks 上车一人，每 30 ticks 装卸一批货物。活动后有 1 秒安静期；至少停留设定的最少时间。有空位且登记乘客正在所设接驳范围内接近本站台，或同路线装货工在 12 格内作业时，在最长停留内等候。满客车／满货仓不会为不能接收的队列无限等待；到最长时间发车，迟到的人或货物等待下一班。
-
-手动模式处理客货后按输入时间发车，未完成装车的批次留在站台。修改时间会更新正在该站台停靠的列车剩余等待。停站设置属于实际站台，读档保留。
-
-## 自动乘客与货运
-
-玩家人类殖民者在受支持的长途移动工作中自动选择路线和具体站台、到站候车、在目标站台下车后继续原工作。默认启用轨道偏好、最短 25 格；旧设置保留。两端接驳范围默认 80 格，可在设置中调整；偏好模式允许接驳成本不超过直接步行的 80%，估计总耗时不超过直接步行的两倍。关闭偏好后要求节省至少 25% 和 120 ticks。
-
-环线按运行方向估算候车与跨首尾的行程，不能把列车末站当成往返终点。自动停站与排队会令实际等待变化，估算不是到站承诺。
-
-乘客手持物品保留在原 carryTracker；普通 HaulToCell / HaulToContainer 工作继续使用原物品和原 Job。征召、倒地、精神状态、离图工作及搬运其他 Pawn 不乘车。白名单另含 Goto、采矿、种植、收获、砍植物、研究、清洁、维修、进食与睡眠。
-
-独立货运：选中起站或在“车站”页点击“货运目的站”，选择 **路线、起站台、目的站台**。将货物放在起站附近 12 格内，选中未征召、可搬运的殖民者，右键起站选择“装载……”。入口提供附近最近一批可搬运物品或工人当前持物。
-
-工人实际拾取并到指定站台交货，列车自动装载，到指定站台卸出。每站台最多 16 批待运，每车 12 格，不占客位。每次搬运数量受原版携带能力限制。订单记录固定的路线和站台，之后修改车站默认货运目的地不会改写已下订单。
-
-卸货限制在目标站台附近 5 格内的可放置、非轨道格。断轨／暂停时保留车载货物；拆除目标站、撤销路线、改线失去目的站或毁车时放回地图，失败则保留重试。卸出后由原版搬运与堆叠规则处理，实例可能合并，数量应守恒。
-
-## 安装、迁移与验证
-
-已安装到 `D:\SteamLibrary\steamapps\common\RimWorld\Mods\LocalRail`。安装包 `dist/LocalRail-0.10.0-rw1.7-poc.zip` 解压后的 LocalRail 放进 Mods；启用 Harmony 和 Local Rail 后重启游戏加载 DLL。使用创意工坊 Harmony 时 Steam 需要运行，使游戏能够发现已订阅的 Mod。
-
-保留 0.2–0.7 存档引用：0.2–0.4 旧路线迁移为往返、零号内部站台（界面一号）、原手动停留；缺少颜色的旧路线按 ID 分配颜色。新旧路线、模式、名称、颜色、站台编号、停站及真实货物容器保存。运输中的乘客读档后恢复原工作和目标，随后可再次自动规划；不保留原座位／队列顺序。读档时清理车站占地内本 Mod 的旧普通轨道，保留车站及引用；自带站台轨道继续连接，原先穿过站台步行带的额外轨道需要在站外重铺。日志记录清理数量。升级前若旧轨道/车站与其他 Mod 或原版实体建筑叠放，请先清理这些冲突；迁移不会删除其他建筑。
-
-0.6 及以前缺少材质的列车门读档时赋予钢材，保留原对象及已有生命值，不补扣金属。旧路线默认自动列车、客货两用，保留原货运能力。
-
-旧门蓝图和框架同样赋予钢材并保留已完成工时，未完工计划按新材料成本继续施工。
-
-0.10 需求：[20-passenger-access-train-types-requirements.zh-CN.md](docs/20-passenger-access-train-types-requirements.zh-CN.md)，验收：[21-passenger-access-train-types-validation.zh-CN.md](docs/21-passenger-access-train-types-validation.zh-CN.md)。上一轮需求与错误根因：[18-rotation-cargo-turnback-requirements.zh-CN.md](docs/18-rotation-cargo-turnback-requirements.zh-CN.md)，实现与验收：[19-rotation-cargo-turnback-validation.zh-CN.md](docs/19-rotation-cargo-turnback-validation.zh-CN.md)。01–17 为历史设计与验证。
+From the repository root, adjust these paths to your installation:
 
 ```powershell
-.\build.ps1 -Test
+.\build.ps1 -Test `
+  -RimWorldDir 'D:\SteamLibrary\steamapps\common\RimWorld' `
+  -HarmonyPath 'D:\SteamLibrary\steamapps\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll'
+```
+
+The script uses `.tools/dotnet/dotnet.exe` when present, otherwise `dotnet` on PATH. Restore has no NuGet package dependency; game and Harmony references come from the specified installations. It builds the DLL, runs production-logic checks with `-Test`, and creates the versioned ZIP in `dist/`.
+
+Do not redistribute game assemblies, Harmony binaries, decompiled game code, or local test saves as part of this mod.
+
+## Validation
+
+The 0.10 validation record includes **68 production-logic checks and 115 in-game checks**, covering long station access through ordinary doors, empty automatic freight, type changes, saves in transit, prior-version saves, turnback routes, hauling, blocked/partial unloading, and double-track gates. These results do not establish compatibility with every mod collection or performance in large colonies.
+
+Relevant scripts, run individually after building:
+
+```powershell
 .\Validation\run-engine.ps1 -Demand -Visual
 .\Validation\run-engine.ps1 -DemandLoad
-.\Validation\run-engine.ps1 -Operations -Visual
 .\Validation\run-engine.ps1 -OperationsLoad
-.\Validation\run-engine.ps1 -Retrofit
-.\Validation\run-engine.ps1 -Warehouse -Visual
-.\Validation\run-engine.ps1 -WarehouseLoad
-.\Validation\run-engine.ps1 -LegacyPlans
-.\Validation\run-engine.ps1 -UpgradePhysical
-.\Validation\run-engine.ps1 -Physical -Visual
-.\Validation\run-engine.ps1 -PhysicalLoad
-.\Validation\run-engine.ps1 -Network
-.\Validation\run-engine.ps1 -NetworkLoad
-.\Validation\run-engine.ps1 -UpgradeNetwork
-.\Validation\run-engine.ps1 -Network -Visual
-.\Validation\run-engine.ps1 -LoadSavedTrip
-.\Validation\run-engine.ps1 -PreviousLoad
-.\Validation\run-engine.ps1 -LegacyLoad
+.\Validation\run-engine.ps1 -Operations
+.\Validation\run-engine.ps1 -Warehouse
 .\Validation\audit-package.ps1
 ```
 
-逐个运行引擎脚本。Physical 使用 `.local/LocalRailTestPhysical`，Network 使用 `.local/LocalRailTestNetwork` 独立配置，其他历史兼容检查使用另一配置。测试只启用 Core、Harmony 和 LocalRail。测试入口同时要求显式命令行开关和特定目录，普通游戏不创建或清理测试地图。ZIP 只含本 Mod 的 DLL、Defs、语言和六张原创 PNG，不含官方／Harmony 程序集、工具或反编译代码。
+Engine scripts install the current local Mod and launch their own RimWorld process with isolated profiles under `.local/`. They require local game/Steam/Harmony availability and use explicit opt-in test flags. Run `OperationsLoad` against an existing fixture before regenerating it if checking a prior-version save. Normal player saves are not used. The package audit compares `Mod/LocalRail`, the installed copy, and the ZIP.
 
-Steam 不可用但已缓存官方 Harmony 1.7 时，验证脚本可替换为 `Validation/run-offline-engine.ps1`，使用同样的参数。它仅临时添加标记归属的验证依赖目录，结束后清理自己的目录，不把 Harmony 打进本 Mod。正常游玩继续使用官方 Harmony。
+[Detailed 0.10 validation record](docs/21-passenger-access-train-types-validation.zh-CN.md) · [Requirements](docs/20-passenger-access-train-types-requirements.zh-CN.md)
 
-路径和连接表按拓扑变化缓存；乘客共用服务路径，每图每 tick 最多两次完整规划；编辑地图预览不逐帧寻路，已登记装货工参与自动停站，不逐 tick 扫描全图工人。轨道静态烘入地图网格。
+## Repository layout
 
-当前没有共享轨道信号／会车、同路线多车或自动跨路线换乘。自动装车限于已配置仓库；其他车站继续使用手动货运入口。两条路线不能共用同一站台轨道。复杂多环拓扑的逐段最短路径选择可能拒绝某些存在其他可行解的站序；界面会报告需检查的连接段。仍需普通殖民地、常用工作／寻路 Mod、易腐货物及更多拆毁阻塞场景的实机验证。
+| Path | Contents |
+| --- | --- |
+| `Mod/LocalRail/` | Installable mod: metadata, Defs, translations, textures, and compiled DLL |
+| `Source/LocalRail/` | C# source, game integrations, and opt-in engine fixtures |
+| `Tests/` | Standalone production-logic checks |
+| `Validation/` | Engine runners, validation evidence, and actual screenshots |
+| `docs/` | Chinese overview, player guide, design records, publishing text, and artwork |
+| `build.ps1` / `install.ps1` | Build/package and fresh-install helpers |
 
+`.tools/`, `.local/`, `bin/`, `obj/`, and `dist/` are ignored. A Git checkout is a source/development package; Workshop uploads use the built `Mod/LocalRail` folder.
 
+## AI-generated content disclosure
 
+Generative AI tools assisted with portions of the code and documentation. Some custom placeholder textures and the promotional cover were AI-generated. Referenced vanilla pawn/item graphics are supplied by RimWorld. Cover art is a promotional illustration; actual implementation is shown in the in-game screenshots. The cover prompt and provenance are recorded in [artwork notes](docs/artwork/cover-generation.md).
 
+## Feedback and contributions
+
+Include your game/mod versions, active mod list, reproduction steps, route/platform screenshots, and relevant logs. For boarding issues, also include the **Rail travel decision** result. Small reproducible cases are particularly useful. For code changes, include relevant validation and preserve the distinction between real transport state and visual rendering.
+
+Workshop-ready [Chinese](docs/workshop/description.zh-CN.bbcode.txt), [English](docs/workshop/description.en.bbcode.txt), and [bilingual](docs/workshop/description.bilingual.bbcode.txt) descriptions are available with [publishing notes](docs/workshop/publishing-notes.zh-CN.md).
