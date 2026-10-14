@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="DoorBase">
+    <defName>LR_RailDoor</defName>
+    <label>automatic rail door</label>
+    <description>A metal automatic door with built-in track. Costs 40 units of any Metallic material; hit points, color and opening speed follow vanilla material stats. Colonists pass normally and trains request opening in advance. Install in a straight rail corridor. No power, fuel or research required.</description>
+    <thingClass>LocalRail.Building_RailDoor</thingClass>
+    <stuffCategories Inherit="False"><li>Metallic</li></stuffCategories>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <designationCategory>Structure</designationCategory>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <passability>PassThroughOnly</passability>
+    <uiOrder>3004</uiOrder>
+    <graphicData>
+      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData><enabled>false</enabled></damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
+    <statBases><MaxHitPoints>300</MaxHitPoints><WorkToBuild>600</WorkToBuild><Flammability>0</Flammability><DoorOpenSpeed>1</DoorOpenSpeed></statBases>
+    <costList />
+    <costStuffCount>40</costStuffCount>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isStuffableAirtight>false</isStuffableAirtight>
+      <canPlaceOverWall>false</canPlaceOverWall>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <maxItemsInCell>0</maxItemsInCell>
+      <unpoweredDoorOpenSpeedFactor>0.25</unpoweredDoorOpenSpeedFactor>
+      <unpoweredDoorCloseSpeedFactor>0.3</unpoweredDoorCloseSpeedFactor>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="DoorBase">
+    <defName>LR_DoubleRailDoor</defName>
+    <label>double-track automatic rail door</label>
+    <description>A three-cell-wide metal automatic gate with two independent rail portals and a middle pedestrian lane. Costs 80 units of any Metallic material. Rotate to face the rail direction; east-west lines need an east or west facing gate. Either train opens the shared gate, and both train tails are protected. Vanilla room, material and colonist door behavior; no power or research needed.</description>
+    <thingClass>LocalRail.Building_RailDoubleDoor</thingClass>
+    <size>(3,1)</size><rotatable>true</rotatable><defaultPlacingRot>North</defaultPlacingRot>
+    <stuffCategories Inherit="False"><li>Metallic</li></stuffCategories>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <designationCategory>Structure</designationCategory><uiOrder>3005</uiOrder>
+    <drawerType>MapMeshAndRealTime</drawerType><passability>PassThroughOnly</passability>
+    <graphicData><texPath>LocalRail/DoubleDoorLeaf</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(3,1)</drawSize><damageData><enabled>false</enabled></damageData></graphicData>
+    <useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+    <uiIconPath>LocalRail/DoubleDoorLeaf</uiIconPath>
+    <statBases><MaxHitPoints>600</MaxHitPoints><WorkToBuild>1200</WorkToBuild><Flammability>0</Flammability><DoorOpenSpeed>1</DoorOpenSpeed></statBases>
+    <costList /><costStuffCount>80</costStuffCount>
+    <building><isAirtight>true</isAirtight><isStuffableAirtight>false</isStuffableAirtight><canPlaceOverWall>false</canPlaceOverWall><canBuildNonEdificesUnder>true</canBuildNonEdificesUnder><maxItemsInCell>0</maxItemsInCell><blueprintClass>Blueprint_Build</blueprintClass><blueprintGraphicData><texPath>LocalRail/DoubleDoorLeaf</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>EdgeDetect</shaderType><drawSize>(3,1)</drawSize></blueprintGraphicData><unpoweredDoorOpenSpeedFactor>0.25</unpoweredDoorOpenSpeedFactor><unpoweredDoorCloseSpeedFactor>0.3</unpoweredDoorCloseSpeedFactor></building>
+  </ThingDef>
+</Defs>

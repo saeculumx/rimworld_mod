@@ -1,0 +1,37 @@
+[
+  {
+    "material": "Silver",
+    "hpFactor": "0.7",
+    "doorSpeed": null,
+    "singleBase": 300,
+    "doubleBase": 600
+  },
+  {
+    "material": "Gold",
+    "hpFactor": "0.6",
+    "doorSpeed": null,
+    "singleBase": 300,
+    "doubleBase": 600
+  },
+  {
+    "material": "Steel",
+    "hpFactor": "1",
+    "doorSpeed": null,
+    "singleBase": 300,
+    "doubleBase": 600
+  },
+  {
+    "material": "Plasteel",
+    "hpFactor": "2.8",
+    "doorSpeed": null,
+    "singleBase": 300,
+    "doubleBase": 600
+  },
+  {
+    "material": "Uranium",
+    "hpFactor": "2.5",
+    "doorSpeed": "0.75",
+    "singleBase": 300,
+    "doubleBase": 600
+  }
+]

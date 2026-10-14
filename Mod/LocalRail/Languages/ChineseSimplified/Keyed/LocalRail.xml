@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LR_Name>地图轨道交通 POC</LR_Name>
+  <LR_Automatic>自动使用轨道交通</LR_Automatic>
+  <LR_Diagnostics>记录乘车诊断日志</LR_Diagnostics>
+  <LR_MinDistance>自动乘车的最短移动距离：{0} 格</LR_MinDistance>
+  <LR_SmoothAnimation>平滑显示乘客和小车移动</LR_SmoothAnimation>
+  <LR_PocLimits>单地图轨道：单／双／四站台客站与货运仓库，2–16 站往返或环线，路线颜色与轨道管理页。每路线一车，各路线占用不同轨道格。四客位、12 格货仓；站台停留支持手动和自动。</LR_PocLimits>
+  <LR_StationInfo>本图车站数：{0}。连接轨道后，使用“建立运营路线”安排列车。</LR_StationInfo>
+  <LR_TravelTo>前往车站（{0}, {1}），有收益时乘车</LR_TravelTo>
+  <LR_TravelToNamed>前往 {0}，有收益时乘车</LR_TravelToNamed>
+  <LR_RenameStation>为这座车站命名，方便区分目的地。</LR_RenameStation>
+  <LR_PreferRail>长途优先乘列车，接受合理候车时间</LR_PreferRail>
+  <LR_CreateService>建立运营路线</LR_CreateService>
+  <LR_CreateServiceDesc>设置车站／站台、往返或环线、路线颜色及各站台停留。</LR_CreateServiceDesc>
+  <LR_NoOtherStation>没有另一座玩家车站</LR_NoOtherStation>
+  <LR_InvalidEndpoints>需要同地图的两座不同玩家车站</LR_InvalidEndpoints>
+  <LR_NoConnection>两站轨道未连通</LR_NoConnection>
+  <LR_NetworkInUse>该连通轨道网已有运营路线</LR_NetworkInUse>
+  <LR_NetworkConflict>路网已合并：另一辆列车优先运营，本列车暂停</LR_NetworkConflict>
+  <LR_StationMissing>路线中的车站已被拆除</LR_StationMissing>
+  <LR_TrainMissing>列车已损坏或被移除</LR_TrainMissing>
+  <LR_TrainOffRoute>列车不在线路路径上：调整轨道或重建路线</LR_TrainOffRoute>
+  <LR_TrackBlocked>轨道受阻，等待恢复</LR_TrackBlocked>
+  <LR_ServicePaused>已停运</LR_ServicePaused>
+  <LR_ServiceDwelling>车站停靠，上下客与装卸货</LR_ServiceDwelling>
+  <LR_ServiceRunning>往返运营中</LR_ServiceRunning>
+  <LR_NoService>尚未安排运营路线；乘客不会召唤列车。</LR_NoService>
+  <LR_ServiceInfo>路线：{0}\n状态：{1}\n乘客：{2}/{3}；候车：{4}</LR_ServiceInfo>
+  <LR_PauseService>暂停运营</LR_PauseService>
+  <LR_ResumeService>恢复运营</LR_ResumeService>
+  <LR_ToggleServiceDesc>暂停时释放乘客并保留列车；恢复后继续往返。</LR_ToggleServiceDesc>
+  <LR_SelectTrain>查看列车</LR_SelectTrain>
+  <LR_SelectTrainDesc>跳转到这条路线的现有列车。</LR_SelectTrainDesc>
+  <LR_RemoveService>撤销路线及列车</LR_RemoveService>
+  <LR_RemoveServiceDesc>让乘客恢复原任务，移除本路线与列车。轨道和车站保留。</LR_RemoveServiceDesc>
+  <LR_ReplaceTrain>重建列车</LR_ReplaceTrain>
+  <LR_ReplaceTrainDesc>现有列车已被移除时，在起站重新配置一辆免费列车。</LR_ReplaceTrainDesc>
+  <LR_SetDwell>设置停站时间</LR_SetDwell>
+  <LR_RouteEditorHelp>按顺序添加站台。环线接回首站，往返线在两端折返。</LR_RouteEditorHelp>
+  <LR_None>未设置</LR_None>
+  <LR_LoadFreight>装载 {0}，运往 {1}</LR_LoadFreight>
+  <LR_DwellValue>本站停留：{0} ticks（{1} 游戏秒）</LR_DwellValue>
+  <LR_InvalidRoute>需要 2–16 个不同且连通的站台。往返线可回走本线轨道，环线需要无重复格的闭合路径。</LR_InvalidRoute>
+  <LR_ConfirmRoute>确认运营路线</LR_ConfirmRoute>
+  <LR_EditRoute>编辑运营路线</LR_EditRoute>
+  <LR_EditRouteDesc>调整站序及停留时间。确认修改时当前乘客恢复原任务。</LR_EditRouteDesc>
+  <LR_FreightStatus>装货站台：{0}；目的站台：{1}；待运批次：{2}</LR_FreightStatus>
+  <LR_RouteEditor>运营路线</LR_RouteEditor>
+  <LR_Start>起点</LR_Start>
+  <LR_AddStop>添加停站</LR_AddStop>
+  <LR_TrainFreight>货仓格数：{0}/{1}</LR_TrainFreight>
+  <LR_DwellSeconds>{0} 秒</LR_DwellSeconds>
+  <LR_FreightDestination>货运目的站</LR_FreightDestination>
+  <LR_Stop>停站</LR_Stop>
+  <LR_FreightDestinationDesc>选择同路线的具体目的站台。自动列车从仓库收集库存，没有匹配发货规则时采用此默认目的站。其他车站通过殖民者右键菜单人工交付货物。</LR_FreightDestinationDesc>
+  <LR_End>终点</LR_End>
+  <LR_SetDwellDesc>手动输入游戏秒数，或启用有最长等待限制的自动上下客／装卸停站。</LR_SetDwellDesc>
+  <LR_Resume>恢复</LR_Resume>
+  <LR_RemoveConfirm>撤销 {0} 及其列车？乘客恢复工作，货物放回地图，保留轨道和车站。</LR_RemoveConfirm>
+  <LR_NoRoutes>没有匹配的路线。连接车站站台后可建立运营路线。</LR_NoRoutes>
+  <LR_Reachable>可达站台（{0}）：{1}</LR_Reachable>
+  <LR_AutoDwell>自动管理本站台的停留</LR_AutoDwell>
+  <LR_Ports>接入端 A {0} · 接入端 B {1}</LR_Ports>
+  <LR_Edit>编辑</LR_Edit>
+  <LR_LoopNotClosed>这条环线没有有效的闭合轨道。</LR_LoopNotClosed>
+  <LR_Shuttle>往返线</LR_Shuttle>
+  <LR_MinAboveMax>最少停留不能大于最长停留。</LR_MinAboveMax>
+  <LR_Routes>路线</LR_Routes>
+  <LR_StationPlatform>{0} · {1} 号站台</LR_StationPlatform>
+  <LR_ManagerHelp>在轨道标签页集中管理路线及每个站台的连接。</LR_ManagerHelp>
+  <LR_Reverse>反向运行</LR_Reverse>
+  <LR_NoStations>请先建造车站</LR_NoStations>
+  <LR_LoadSummary>乘客 {0}/4 · 候车 {1} · 货物 {2}/12</LR_LoadSummary>
+  <LR_ManagerNetworkRule>每条路线一辆车，每个轨道格只供一条路线使用。</LR_ManagerNetworkRule>
+  <LR_TimePresets>手动停留快捷值</LR_TimePresets>
+  <LR_ShowAllRoutes>地图显示所有路线颜色</LR_ShowAllRoutes>
+  <LR_EditorNetworkHelp>每站选择具体站台。往返线可回走本线轨道；环线须闭合。不同路线不能共用轨道格。</LR_EditorNetworkHelp>
+  <LR_RouteColor>路线颜色</LR_RouteColor>
+  <LR_RouteName>路线名称</LR_RouteName>
+  <LR_PlatformHelp>站台编号随建筑旋转；默认由南向北。各条轨道独立，需在建筑外实际接轨。</LR_PlatformHelp>
+  <LR_Locate>定位</LR_Locate>
+  <LR_LineNumber>线路 {0}</LR_LineNumber>
+  <LR_AutoDwellHelp>至少等待最少时间，预留上车、装卸与 1 秒安静期；在最长时间内等候附近赶来的乘客或装货工。满车不会无限等待。</LR_AutoDwellHelp>
+  <LR_Stations>车站</LR_Stations>
+  <LR_Manager>轨道管理</LR_Manager>
+  <LR_Forward>正向运行</LR_Forward>
+  <LR_ManualSeconds>手动停留（游戏秒）</LR_ManualSeconds>
+  <LR_PathConflict>轨道与另一条路线重叠</LR_PathConflict>
+  <LR_PlatformNumber>{0} 号站台</LR_PlatformNumber>
+  <LR_DisconnectedPlatforms>未找到连接路径：{0} → {1}。请检查实际接轨和站序；往返线允许回走本线轨道，环线需要无重复格的闭合路径。</LR_DisconnectedPlatforms>
+  <LR_MaxSeconds>自动最长停留（游戏秒）</LR_MaxSeconds>
+  <LR_Remove>撤销</LR_Remove>
+  <LR_PlatformRoutes>使用路线：{0}</LR_PlatformRoutes>
+  <LR_AutoRange>自动 {0}–{1} 秒</LR_AutoRange>
+  <LR_Loop>环线</LR_Loop>
+  <LR_TrainAhead>等待另一辆列车腾出轨道格</LR_TrainAhead>
+  <LR_InvalidSeconds>请输入有效的游戏秒数：手动／最长 0.5–120，最少 0.5–30。</LR_InvalidSeconds>
+  <LR_NoMap>请进入殖民地地图管理轨道。</LR_NoMap>
+  <LR_Save>保存</LR_Save>
+  <LR_Pause>暂停</LR_Pause>
+  <LR_MinSeconds>自动最少停留（游戏秒）</LR_MinSeconds>
+  <LR_PlatformDwell>{0} 号站台：{1}</LR_PlatformDwell>
+  <LR_OverlapRoute>轨道已由 {0} 占用。请选择其他站台或轨道。</LR_OverlapRoute>
+  <LR_NewRoute>新建路线</LR_NewRoute>
+  <LR_DoorWaiting>等待列车门完全打开／允许通行</LR_DoorWaiting>
+  <LR_RailDoorHelp>自带轨道的金属自动门，需保持直线通道。列车提前开门，无需电力。耐久度和速度遵循所选金属材质。</LR_RailDoorHelp>
+  <LR_TrainRiders>乘客：{0}</LR_TrainRiders>
+  <LR_DoorStraight>{0} 的列车门需要直线进出，请将转弯移到门外。</LR_DoorStraight>
+  <LR_FreightOnly>货运专列</LR_FreightOnly>
+  <LR_MixedTrain>客货两用</LR_MixedTrain>
+  <LR_WarehouseOrders>自动发货规则</LR_WarehouseOrders>
+  <LR_WarehouseHelp>殖民者通过原版搬运将资源送入储存行。自动列车按默认目的站或首个匹配发货规则运输；普通列车只接受人工交付货物。目标满仓或拒收时货物留车，下次重试。在“储存”中设置接受物品。</LR_WarehouseHelp>
+  <LR_WarehouseStatus>仓库库存：{0} 单位。自动发货规则：{1} 条。</LR_WarehouseStatus>
+  <LR_ExportReceived>允许转运接收货物（请检查规则是否循环）</LR_ExportReceived>
+  <LR_AddWarehouseOrder>添加发货目的地</LR_AddWarehouseOrder>
+  <LR_NoWarehouseRoutes>请先建立经过本仓库的运营路线；目的地必须是同一路线上的其他站台。</LR_NoWarehouseRoutes>
+  <LR_AllStoredCargo>全部接受的货物</LR_AllStoredCargo>
+  <LR_UnloadBlockedInfo>{0}：{1} 无法卸货或拒收。剩余货物留在车上，列车继续运行并在下次访问重试。</LR_UnloadBlockedInfo>
+  <LR_ChangeWarehouseDestination>修改路线／目的地</LR_ChangeWarehouseDestination>
+  <LR_WarehouseRulePriority>{0}/32 条规则；按顺序采用首个匹配规则。</LR_WarehouseRulePriority>
+  <LR_PickerDuplicate>该站台已在路线中</LR_PickerDuplicate>
+  <LR_PickerHelp>可平移、缩放地图，点击车站内的轨道行。编号对应列表；定位可移到站台。灰色为已选或未连通，黄色为当前指示。右键或返回取消选择。</LR_PickerHelp>
+  <LR_PickerTitle>选择站台</LR_PickerTitle>
+  <LR_PickerBack>返回路线编辑（保留草稿）</LR_PickerBack>
+  <LR_CargoSlotsHelp>每格容纳一个原版物品堆栈。悬停查看目标站台；卸货受阻的物品保留在格内，下次到站重试。</LR_CargoSlotsHelp>
+  <LR_CargoSlots>列车货仓 · 12 格</LR_CargoSlots>
+  <LR_ManualPriority>仓储优先级：手动设置</LR_ManualPriority>
+  <LR_AutoStoragePriority>自动管理仓储优先级</LR_AutoStoragePriority>
+  <LR_ReceivePriority>自动仓储：收货中转（低优先级）</LR_ReceivePriority>
+  <LR_DispatchPriority>自动仓储：发货集货（优先；到货按低处理）</LR_DispatchPriority>
+  <LR_AutoStoragePriorityHelp>无默认目的站且无启用发货规则时设为低，便于搬出到货；有目的站或发货规则时设为优先集货。已卸货物不会被自动集货仓抢回，混合站到货仍可搬往普通储存区。关闭自动管理或手动修改原版优先级，可使用自定义设置。</LR_AutoStoragePriorityHelp>
+  <LR_AccessRadius>车站接驳范围：{0} 格</LR_AccessRadius>
+  <LR_PassengerTrainKind>普通列车</LR_PassengerTrainKind>
+  <LR_AutomaticTrainKind>自动列车</LR_AutomaticTrainKind>
+  <LR_TrainKindsHelp>普通列车运送乘客及人工交付的货物。自动列车还会在无人乘坐时收集仓库库存。设置仓库默认目的站或分类发货规则即可；已到货物受防回运保护。切换类型保留实体列车与现有货物。</LR_TrainKindsHelp>
+  <LR_RailDecision>乘车诊断</LR_RailDecision>
+  <LR_ReasonDisabled>模组设置中关闭了自动乘车。</LR_ReasonDisabled>
+  <LR_ReasonDrafted>殖民者正被征召，按战斗移动指令行动。解除征召后才启用自动通勤。</LR_ReasonDrafted>
+  <LR_ReasonJob>当前角色或工作不符合安全自动通勤条件。支持搬运、采矿、种植、研究、清洁与普通移动等工作的移动阶段。</LR_ReasonJob>
+  <LR_ReasonAssigned>殖民者已安排接驳、候车或乘车。</LR_ReasonAssigned>
+  <LR_ReasonNotMoving>当前没有处于受支持移动阶段的有效步行路径。请在殖民者走向远处工作时重新评估。</LR_ReasonNotMoving>
+  <LR_ReasonShort>当前剩余行程短于模组设置中的最小乘车距离。</LR_ReasonShort>
+  <LR_ReasonNoStations>角色起点或目的地附近，在接驳范围内没有找到可用车站。可增设车站或扩大接驳范围。</LR_ReasonNoStations>
+  <LR_ReasonNoService>附近车站没有运行中的可载客路线。请检查运营路线、暂停状态及列车是否存在；货运专列不接受乘客。</LR_ReasonNoService>
+  <LR_ReasonAccess>在搜索预算内未找到通往运营站台的安全步行路径。请检查门、墙、允许区域与危险。</LR_ReasonAccess>
+  <LR_ReasonUnsafe>轨道行程经过禁用、危险或无法进入的格子。</LR_ReasonUnsafe>
+  <LR_ReasonCost>当前继续步行：接驳步行或候车超过偏好策略的上限。偏好列车允许接驳合计不超过直接步行估算的 80%，全程不超过步行估算的两倍。</LR_ReasonCost>
+  <LR_ReasonSelected>已有合适的列车路线。诊断不会发布指令；正常移动时将自动安排上车。</LR_ReasonSelected>
+  <LR_DecisionContext>工作：{0}｜接驳范围：{1}｜起点 / 终点附近车站：{2} / {3}</LR_DecisionContext>
+  <LR_DecisionCosts>估算游戏秒——直接步行：{0}；步行到站：{1}；下车后步行：{2}；列车行程：{3}；候车：{4}。</LR_DecisionCosts>
+  <LR_DecisionLine>评估路线：{0}</LR_DecisionLine>
+  <LR_DecisionRefresh>重新评估</LR_DecisionRefresh>
+  <LR_DecisionHelp>选择正在步行的殖民者并重新评估，可查看接驳、运营路线与时间成本。此快照不会改变工作或强制上车。长距离通勤可在模组设置中启用“偏好列车”。</LR_DecisionHelp>
+  <LR_DefaultInventoryDestination>库存默认目的站</LR_DefaultInventoryDestination>
+  <LR_DefaultInventoryHelp>自动列车在无人乘坐时也会收集库存，送往此目的站。启用且匹配的分类发货规则优先；没有匹配规则的库存使用默认目的站。到货默认不会再次发出。普通列车需要人工交付货物。</LR_DefaultInventoryHelp>
+  <LR_AutomaticRequired>此发货规则需要自动列车；请在路线编辑器中切换类型。</LR_AutomaticRequired>
+</LanguageData>

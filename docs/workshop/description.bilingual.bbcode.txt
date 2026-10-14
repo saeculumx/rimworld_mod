@@ -1,0 +1,83 @@
+[h1]Local Rail · Pre-Alpha 0.10.0[/h1]
+[b]让殖民者坐火车去工作，让货物随列车到站。[/b]
+
+为单张殖民地地图加入实体轨道、常驻列车和自动客货运。殖民者在合适的长途工作中自行乘车，自动列车在无人乘坐时也能运输仓库库存。
+
+[h2]功能[/h2]
+[list]
+[*]单、双、四站台客运站与货运仓库，可旋转放置；直线／斜向轨道、双轨模块、金属自动列车门。
+[*]每路线一辆常驻列车，2–16 站往返或实际闭合环线。支持名称、颜色、地图箭头和底部“轨道”管理页。
+[*]普通列车载客及运输人工交付货物；自动列车额外收集仓库库存，可设为客货两用或货运专列。两种均自行运营，无需司机。
+[*]每车四客位、12 个货物堆栈槽；车顶显示真实货物，货仓界面显示数量与目的站台。
+[*]直接输入停站秒数，或使用带最短／最长时间的自动停站。殖民者提供“乘车诊断”；接驳范围默认 80 格，可调整。
+[/list]
+
+[h2]依赖与开始使用[/h2]
+RimWorld 1.7；测试版本 1.7.4977 rev1248。需要 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url]，在本模组之前加载。无 DLC 或其他载具框架依赖，包含简体中文与英文。
+[olist]
+[*]在“杂项”建造至少两个站，用轨道连接具体站台的端口。车站和门自带轨道，不要在建筑内部重复铺轨。
+[*]打开“轨道”页，创建路线，选择停站顺序、具体站台和列车类型。确认后，符合条件的非征召殖民者会自动接驳、候车、乘车。
+[*]无人货运请选择自动列车。在发货仓库设置“库存默认目的站”，或按物品添加发货规则；殖民者搬入资源后，列车到站自动装载和运输。
+[*]收货遵守过滤器与容量。满仓／拒收时货物留车，下次停靠重试，并发出不暂停提示。已到货默认不再次自动发出。
+[/olist]
+
+[h2]Pre-Alpha 状态与限制[/h2]
+[list]
+[*]轨道、客站和仓库目前不消耗建造资源，仍需施工；金属门消耗材料。暂不需要电力、燃料或研究，平衡与占位素材仍会调整。
+[*]不同路线不能共用轨道格，每路线一车。多站台分别接轨，不会自动互通。暂不支持跨地图铁路、自动跨线换乘、共享轨道信号或会车。
+[*]自动乘车用于受支持工作的移动阶段，包括常见搬运、采矿、种植、研究、清洁和维修等。征召、倒地、精神状态、离图任务和搬运活体 Pawn 不自动乘车；接驳或候车不合适时仍会步行。
+[*]复杂多环路网的某些站序可能被当前路径选择拒绝。宽车体完整碰撞尚未实现；列车门只用于水平／垂直通道。
+[*]核心功能已在 Core＋Harmony 中实机测试，未全面验证其他工作／寻路模组和整合包。
+[/list]
+
+[h2]AI 生成内容披露[/h2]
+部分代码与说明使用 AI 辅助编写，部分自制占位贴图由生成式 AI 生成。引用的原版人物和物品图像来自 RimWorld。
+
+[h2]存档兼容与备份[/h2]
+已测试路线／在途货物存档及 0.9→0.10 升级，未全面验证任意旧存档中途加入、回退或移除。后续可能修改存档数据，不保证所有旧档无损兼容。
+[b]首次加入、更新或移除前，请另存独立手动备份，避开自动存档覆盖，先在副本测试。[/b]保留游戏／模组版本和模组列表。有铁路建筑、乘车任务或在途货物时避免直接移除；清理后也不保证安全卸载。
+
+反馈请提供游戏／模组版本、模组列表、复现步骤、路线／站台截图和错误日志。乘车问题请附“乘车诊断”结果。
+
+[hr][/hr]
+
+[h1]Local Rail · Pre-Alpha 0.10.0[/h1]
+[b]Let colonists take the train to work—and let cargo travel on its own.[/b]
+
+Physical tracks, permanent trains, automatic commuting, and unmanned freight on one colony map. Colonists take suitable trains and resume their jobs; automatic trains move warehouse stock with nobody aboard.
+
+[h2]Features[/h2]
+[list]
+[*]Rotatable 1/2/4-platform stations and warehouses, straight/diagonal rails, double-track modules, and metallic rail doors.
+[*]One permanent train per route, 2–16 stops, reversing shuttles, and physically closed loops. Named and colored routes, map arrows, and a central Rail tab.
+[*]Ordinary trains carry passengers and manual freight. Automatic trains also collect warehouse stock, with mixed or freight-only modes. No driver required.
+[*]Four seats and twelve cargo stack slots per train, with real cargo icons, quantities, and destinations.
+[*]Typed dwell times or automatic minimum/maximum dwell. Colonist travel diagnostics; adjustable station access radius, defaulting to 80 tiles.
+[/list]
+
+[h2]Requirements and quick start[/h2]
+RimWorld 1.7; tested on 1.7.4977 rev1248. Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url], loaded before this mod. No DLC or other vehicle framework required. English and Simplified Chinese included.
+[olist]
+[*]Build at least two stations under Misc and connect the ends of the chosen platform tracks. Stations and doors include rails; do not duplicate tracks inside their footprints.
+[*]Open Rail, create a route, and select the stop order, exact platforms, and train type. Eligible undrafted colonists automatically approach, wait, and board.
+[*]For unmanned freight, choose an Automatic train. Set the sending warehouse's Default inventory destination or item-specific dispatch rules. Colonists haul stock into the warehouse; trains collect it during stops.
+[*]Unloading respects storage filters and capacity. Full or rejecting targets keep cargo aboard for another visit and produce a non-pausing notification. Received cargo is not automatically re-exported by default.
+[/olist]
+
+[h2]Pre-Alpha status and limitations[/h2]
+[list]
+[*]Tracks, stations, and warehouses currently cost no construction resources but still require work. Rail doors cost metallic materials. No power, fuel, or research requirements yet; balance and placeholder artwork remain in development.
+[*]Different routes cannot share track cells; one train per route. Platforms connect independently. No world-map rail, automatic route transfers, shared-track signals, or passing traffic yet.
+[*]Automatic boarding supports movement stages of common hauling, mining, planting, research, cleaning, repair, and other listed jobs. Drafted, downed, or mentally affected pawns, map-exit tasks, and carrying living pawns are excluded. Unsuitable access or waiting costs can still favor walking.
+[*]Complex multi-loop stop orders may be rejected. Full-width collision is not implemented; doors require horizontal/vertical passages.
+[*]Core features have been tested with Core and Harmony. Other job/pathfinding mods and mod collections are not comprehensively tested.
+[/list]
+
+[h2]AI disclosure[/h2]
+AI assisted portions of the code and text, and generated some custom placeholder textures. Referenced vanilla pawn/item graphics come from RimWorld.
+
+[h2]Save compatibility and backups[/h2]
+Route/cargo saves and a 0.9-to-0.10 upgrade were tested. Adding to arbitrary existing saves, downgrading, and removal were not comprehensively tested. Future changes may affect older saves.
+[b]Before adding, updating, or removing, make a separate manual backup outside autosaves and test on a copy.[/b]Keep game/mod versions and your mod list. Avoid removal with rail buildings, trips, or cargo remaining; clearing them does not guarantee safe removal.
+
+For feedback, include game/mod versions, your mod list, reproduction steps, route/platform screenshots, and relevant logs. For boarding issues, also include the Rail travel decision result.

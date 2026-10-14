@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="LR_MultiStationBase" ParentName="LR_TrackBase" Abstract="True">
+    <thingClass>LocalRail.Building_RailMultiStation</thingClass>
+    <size>(5,5)</size>
+    <rotatable>true</rotatable><defaultPlacingRot>North</defaultPlacingRot>
+    <graphicData>
+      <texPath>LocalRail/Station</texPath>
+      <graphicClass>LocalRail.Graphic_RailPlatforms</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <statBases><MaxHitPoints>450</MaxHitPoints><WorkToBuild>900</WorkToBuild></statBases>
+    <designationCategory>Misc</designationCategory>
+  </ThingDef>
+  <ThingDef ParentName="LR_MultiStationBase">
+    <defName>LR_TwoPlatformStation</defName>
+    <label>two-platform rail station</label>
+    <description>A free rotatable 5x5 station with two independent through tracks. Numbering rotates with the building, by default south to north. Select the exact platform when creating a route; each platform has separate dwell settings and connectivity. Tracks connect to other platforms only through actual outside rails.</description>
+    <uiOrder>3002</uiOrder>
+  </ThingDef>
+  <ThingDef ParentName="LR_MultiStationBase">
+    <defName>LR_FourPlatformStation</defName>
+    <label>four-platform rail station</label>
+    <size>(5,9)</size>
+    <graphicData><drawSize>(5,9)</drawSize></graphicData>
+    <description>A free rotatable 5x9 interchange (9x5 after rotation) with four independent through tracks. Numbering rotates with the building, by default south to north. Separate routes can use separate platforms. Check each platform's connections and dwell settings in the Rail management tab.</description>
+    <statBases><MaxHitPoints>600</MaxHitPoints><WorkToBuild>1500</WorkToBuild></statBases>
+    <uiOrder>3003</uiOrder>
+  </ThingDef>
+  <MainButtonDef>
+    <defName>LR_Rail</defName>
+    <label>rail</label>
+    <description>Manage all rail routes, line colors, stations and individual platforms.</description>
+    <tabWindowClass>LocalRail.RailManager</tabWindowClass>
+    <order>75</order>
+    <closesWorldView>true</closesWorldView>
+  </MainButtonDef>
+</Defs>
+

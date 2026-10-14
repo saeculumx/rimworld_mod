@@ -1,0 +1,73 @@
+  正在确定要还原的项目…
+  所有项目均是最新的，无法还原。
+  LocalRail -> D:\rimworld_mod\Source\LocalRail\bin\Release\net10.0\LocalRail.dll
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:21.57
+  正在确定要还原的项目…
+  所有项目均是最新的，无法还原。
+PASS 100-cell straight route
+PASS bidirectional route
+PASS same-cell route
+PASS missing endpoint
+PASS removed track disconnects route
+PASS unsafe/forbidden cell rejected
+PASS right-angle route
+PASS diagonal rail cells connect
+PASS shortest branch chosen with cycle
+PASS branch station reachable
+PASS long trip wins including access and boarding
+PASS small absolute saving rejected
+PASS expensive station access rejected
+PASS less than 25 percent saving rejected
+PASS same station never considered transit
+PASS invalid direct cost rejected
+PASS 25 percent boundary accepted
+PASS warm route reuses topology search
+PASS topology invalidation drops previously connected route
+PASS repair invalidates disconnected route
+PASS cache preserves reverse direction
+PASS unreachable pair cache is bounded
+PASS planning capped at two per tick
+PASS budget resets next tick
+PASS animation starts and ends on cell centers
+PASS subtick animation midpoint
+PASS animation cannot overshoot
+PASS train at boarding terminal is available immediately
+PASS opposite-terminal wait includes departure dwell once
+PASS return wait includes far terminal dwell
+PASS approaching train wait follows current direction
+PASS rail preference accepts bounded waiting cost
+PASS time-saving mode rejects slower train
+PASS rail preference still rejects excessive access walking
+PASS rail preference rejects excessive waiting
+PASS very short service excluded
+PASS queue timeout permits three full round trips
+PASS existing right-angle rails do not gain diagonal shortcut
+PASS diagonal segment takes four ticks
+PASS midpoint boarding in correct direction available now
+PASS opposite-direction passenger waits through terminal turnaround
+PASS destination wait includes intermediate custom dwell
+PASS returning train reaches intermediate boarding stop
+PASS new timetable retains rail preference
+PASS inspection omits empty base and trailing blank lines
+PASS inspection sanitizes internal blank lines
+PASS diagonal interpolation respects four-tick duration
+PASS ring distance includes closing edge
+PASS reverse ring crosses closing edge
+PASS last ring stop reaches first without terminal reversal
+PASS reverse ring chooses counter-direction arc
+PASS ring passenger includes intermediate dwell
+PASS ring wait wraps current last cell to first stop
+PASS reverse wait includes departure dwell and closing arc
+PASS ring boards towards first stop while dwelling at last stop
+PASS parallel station tracks remain disconnected without outside rail
+PASS actual crossover makes parallel platforms reachable
+PASS door edge policy excludes diagonal portal traversal
+PASS door edge policy retains straight portal route
+{"cells":1000,"iterations":2000,"uncachedMs":390.3236,"cachedMs":0.2045,"uncachedAllocatedBytes":509264040,"cachedAllocatedBytes":40,"cachedSearches":1,"cacheHits":2019}
+59 production logic checks passed.
+Built and packaged: D:\rimworld_mod\dist\LocalRail-0.6.0-rw1.7-poc.zip

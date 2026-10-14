@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LR_Rail.label>轨道</LR_Rail.label>
+  <LR_Rail.description>管理所有轨道路线、颜色、车站和各条站台轨道。</LR_Rail.description>
+</LanguageData>

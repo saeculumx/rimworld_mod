@@ -1,0 +1,1 @@
+{"completed":true,"tests":4,"passed":["reload retains edited automatic type and original train identity","reload retains default dispatch destination without advanced rules","reload retains real unmanned cargo","reloaded unmanned train completes stock delivery"],"PlanAttempts":0,"AccessExpanded":0,"PeakPlansPerTick":0}

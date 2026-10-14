@@ -1,0 +1,29 @@
+[
+  {
+    "file": "D:\\rimworld_mod\\Mod\\LocalRail\\Textures\\LocalRail\\Cart.png",
+    "original": "C:\\Users\\XHYX0\\.codex\\generated_images\\01a13607-7351-7751-aea7-8143221155b0\\exec-d5c52180-ef9b-4adc-ac70-68d74c578273.png",
+    "width": 1536,
+    "height": 1024,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0,
+    "sha256": "21E3F8BD17304C301D24EFE24B861DEC092083375F68965A4C3652D01C7E45E1"
+  },
+  {
+    "file": "D:\\rimworld_mod\\Mod\\LocalRail\\Textures\\LocalRail\\Station.png",
+    "original": "C:\\Users\\XHYX0\\.codex\\generated_images\\01a13607-7351-7751-aea7-8143221155b0\\exec-75c3a428-19e8-4726-b24c-ba25458aed1d.png",
+    "width": 1254,
+    "height": 1254,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0,
+    "sha256": "639803BA9FAEE9C16ECE9B0565DF940E47F874C462E50820332B948752311F6E"
+  },
+  {
+    "file": "D:\\rimworld_mod\\Mod\\LocalRail\\Textures\\LocalRail\\Track.png",
+    "original": "C:\\Users\\XHYX0\\.codex\\generated_images\\01a13607-7351-7751-aea7-8143221155b0\\exec-8ecd5624-1ef5-4aee-895d-098f176b2445.png",
+    "width": 1254,
+    "height": 1254,
+    "pixelFormat": "Format32bppArgb",
+    "cornerAlpha": 0,
+    "sha256": "4A65AC3E2A60348A5041DE8E975D14F20EC7884FFACF6D17907B1C68EC8C1DA2"
+  }
+]

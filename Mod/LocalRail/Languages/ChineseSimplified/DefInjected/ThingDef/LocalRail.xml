@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LR_Track.label>地图内轨道</LR_Track.label>
+  <LR_Track.description>免费实体轨道建筑，可步行、有生命值，施工前需要清除阻挡树木，不能与墙或其他实体建筑叠放。默认轨道线可直接斜向拖动，也可切换横竖线。斜向行驶不能切过阻塞墙角；水面先建桥。无需材料、电力或燃料。</LR_Track.description>
+  <LR_Station.label>旧式单格车站</LR_Station.label>
+  <LR_Station.description>为旧存档保留的免费单格车站。连接其他站台并建立运营路线后可使用常驻列车。可换建单／双／四站台车站。</LR_Station.description>
+  <LR_PlatformStation.label>单站台车站</LR_PlatformStation.label>
+  <LR_PlatformStation.description>免费 3×3 单站台车站，可用原版旋转键在东西与南北轨道方向之间切换。选择具体站台建立 2–16 站往返或闭合环线，往返可重复经过本线轨道。停站时间可输入或自动管理。</LR_PlatformStation.description>
+  <LR_Train.label>地图轨道列车</LR_Train.label>
+  <LR_Train.description>每路线一辆常驻列车，四个客位、12 格货物。车顶显示最多六种原版货物图标，选中后显示名称数量，货仓页查看全部堆栈。按站序往返或环线运行，往返允许重复经过本线轨道。乘客保留手持资源和原工作。</LR_Train.description>
+  <LR_TwoPlatformStation.label>双站台车站</LR_TwoPlatformStation.label>
+  <LR_TwoPlatformStation.description>免费 5×5 可旋转车站，两条独立贯通轨道。站台编号随旋转改变方向，默认由南向北；各有独立停留设置和接轨状态。通过建筑外轨道连接。</LR_TwoPlatformStation.description>
+  <LR_FourPlatformStation.label>四站台车站</LR_FourPlatformStation.label>
+  <LR_FourPlatformStation.description>免费 5×9 可旋转车站，旋转后为 9×5，四条独立贯通轨道。可为不同路线分配站台，在轨道管理页查看连接、路线和停站时间。</LR_FourPlatformStation.description>
+  <LR_RailDoor.description>结构类金属自动门，自带轨道。消耗 40 单位任意金属；耐久度、颜色和开门速度遵循原版材质，原版玻璃钢最耐久。殖民者正常开门，列车提前开门并等候完全打开，无需电力或研究。</LR_RailDoor.description>
+  <LR_RailDoor.label>金属自动列车门</LR_RailDoor.label>
+  <LR_DoubleRailDoor.label>双轨自动列车门</LR_DoubleRailDoor.label>
+  <LR_DoubleRailDoor.description>三格宽金属自动门，两端为独立轨道，中间可步行。消耗 80 单位任意金属。东西向线路需将门旋转朝东或朝西。任一列车开门，两线车尾均受保护；使用原版气密、材质和人物通行逻辑。</LR_DoubleRailDoor.description>
+  <LR_DoubleTrack.label>双轨模块</LR_DoubleTrack.label>
+  <LR_DoubleTrack.description>免费 3×3 实体建筑，两条平行轨道相隔一格，不自动交叉。拖动每三格放一个模块，可旋转为南北向。斜向连接继续用单轨。</LR_DoubleTrack.description>
+  <LR_FreightWarehouse.label>双站台货运仓库</LR_FreightWarehouse.label>
+  <LR_FreightWarehouse.description>免费 5×5 可旋转货运仓库，两条独立轨道与 15 个储存格，每格三堆。默认低优先级收货，启用发货规则后自动优先集货，已卸货物不会被自动集货仓抢回。可手动管理优先级。满仓或拒收保留真实车载货物，列车继续运行并给出不暂停的消息。</LR_FreightWarehouse.description>
+  <LR_FourPlatformWarehouse.label>四站台货运仓库</LR_FourPlatformWarehouse.label>
+  <LR_FourPlatformWarehouse.description>免费 5×9 可旋转四站台货运仓库，旋转后为 9×5，四条独立轨道与 25 个储存格。按路线、站台、目的地和货物类型自动发货。自动管理收货与集货优先级，接收货物默认不再次发出。</LR_FourPlatformWarehouse.description>
+  <LR_SinglePlatformWarehouse.label>单站台货运仓库</LR_SinglePlatformWarehouse.label>
+  <LR_SinglePlatformWarehouse.description>免费 3×3 可旋转工业货运仓库，一个站台、六个储存格，每格三堆。默认接受全部可储存物品，收货时自动低优先级、有启用发货规则时优先集货；已卸货物仍可搬往普通储存区。可关闭自动优先级使用原版设置。列车固定 12 格货仓。</LR_SinglePlatformWarehouse.description>
+  <LR_PassengerTrain.label>普通客运列车</LR_PassengerTrain.label>
+  <LR_PassengerTrain.description>常驻四座客运列车，接受人工交付货物，不自动收集仓库库存。可在路线编辑器中切换列车类型。</LR_PassengerTrain.description>
+  <LR_AutomaticTrain.label>自动运输列车</LR_AutomaticTrain.label>
+  <LR_AutomaticTrain.description>无人乘坐时也自动装载货运仓库库存，并在指定站台卸货。四个客位与十二格货仓，支持客货两用或货运专列。</LR_AutomaticTrain.description>
+</LanguageData>

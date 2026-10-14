@@ -1,0 +1,59 @@
+14:08:34  INFO Command line arguments: -NoFileLog -NoCrashDialog -DisableLogStackTraces -savedatafolder=D:\rimworld_mod\.local\LocalRailTestPhysicalUpgrade -localrail-physical-load-smoke -Headless
+14:08:34  INFO RimWorld 1.7.4977 rev1248
+14:08:34  INFO Save data folder overridden to D:\rimworld_mod\.local\LocalRailTestPhysicalUpgrade
+14:08:35  INFO Harmony Mod v3.0.0.0; Harmony library v3.0.0.0-rc.2
+14:08:35  INFO [LocalRail] Automatic rail POC loaded. Tested build target: 1.7.4977.
+14:08:39  WARN DrawTexture (Graphics.cs:434): Stub! You may not get expected results!
+14:08:39  WARN Deferred loading: 671 textures have no pixels, the pack or cache could not supply them: D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Other\FogOfWar.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\DiagonalStripesTile.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\TargetHighlight_Side.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Weather\Overlays\SporeGlowOverlay.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Weather\LightningBolt.psd
+14:08:40  INFO Loading game from file LocalRailPhysicalGate with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - localrail.automatic.poc
+14:08:41  INFO [LocalRail] Legacy rail door assigned steel; no materials charged.
+14:08:41  INFO [LocalRail] Legacy rail door assigned steel; no materials charged.
+14:08:41  INFO [LocalRail] Legacy rail door assigned steel; no materials charged.
+14:08:41  INFO [LocalRail] Legacy rail door assigned steel; no materials charged.
+14:08:43  INFO [RailPhysicalSmoke] PASS load preserves exact paused train and operating route
+14:08:43  INFO [RailPhysicalSmoke] PASS load rebuilds door track registry and physical airtight doors
+14:08:43  INFO [RailPhysicalSmoke] PASS load protects door occupied by saved car
+14:08:43  INFO [RailPhysicalSmoke] PASS load retains delivered real resource stack
+14:08:43  INFO [RailPhysicalSmoke] PASS loaded empty train clears door and automatic sealing resumes
+14:08:43  INFO [RailPhysicalSmoke] PASS destroying integrated door removes track and suspends route
+14:08:43  WARN Persistent allocation 0x1A7CC1A27C8 (479616 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CC2B3048 (8633076 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CCAF0088 (479616 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3B2FB8 (400 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CDAC3048 (5737232 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3B3B88 (400 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CE040048 (3357312 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CE384048 (2877696 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CCB65228 (479616 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CCBDA3C8 (479616 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3C42B8 (4 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3D0EE8 (24 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB216A78 (7816 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3D1878 (24 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CCC4F568 (294912 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3D1008 (24 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7C4A4A998 (7816 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3D1158 (24 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CC114AF8 (7816 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CCC97588 (250000 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CCCD4638 (250000 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3D0D98 (24 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CC24B998 (163840 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x188E3DEFB18 (952 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7C04BE848 (128 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7C4A4C838 (5184 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x188E3A84398 (1296 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CC1205A8 (65536 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3D1248 (24 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3C4738 (8 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7C04BE988 (128 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CC2739B8 (5184 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x188E3A848E8 (1296 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7CCD116E8 (65536 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3D16C8 (24 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7BB3BDC58 (8 bytes, align 8) was not freed before shutdown.
+14:08:43  WARN Persistent allocation 0x1A7C3F25C98 (128 bytes, align 8) was not freed before shutdown.
+14:08:43 

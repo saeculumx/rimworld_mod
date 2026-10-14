@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="LR_TrackBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>LocalRail.Building_Rail</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>LocalRail/Track</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <blockPlants>true</blockPlants>
+    <wipesPlants>true</wipesPlants>
+    <forceMoveItemsBeforeConstruction>true</forceMoveItemsBeforeConstruction>
+    <building>
+      <isEdifice>true</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <maxItemsInCell>0</maxItemsInCell>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+    </building>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>60</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+      <MarketValue>0</MarketValue>
+    </statBases>
+    <costList />
+    <constructEffect>ConstructMetal</constructEffect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+  </ThingDef>
+  <ThingDef ParentName="LR_TrackBase">
+    <defName>LR_Track</defName>
+    <label>local rail track</label>
+    <description>A free walkable physical track building. The default rail line can be dragged orthogonally or diagonally; the orthogonal Line style remains available. Construction clears blocking plants and items first; tracks cannot overlap other edifices. Build bridges before crossing unsupported water. Diagonal travel cannot cut blocked corners. Connect stations and create an operating route. No materials, power or fuel required.</description>
+    <uiOrder>3000</uiOrder>
+    <drawStyleCategory>LR_TrackLines</drawStyleCategory>
+  </ThingDef>
+  <ThingDef ParentName="LR_TrackBase">
+    <defName>LR_Station</defName>
+    <label>legacy local rail station</label>
+    <thingClass>LocalRail.Building_RailStation</thingClass>
+    <designationCategory IsNull="True" />
+    <description>A small passenger station. Connect to another station using local rail tracks. Eligible colonists automatically use it for long journeys when the complete trip saves time.</description>
+    <graphicData>
+      <texPath>LocalRail/Station</texPath>
+      <color>(1,1,1)</color>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <uiOrder>3001</uiOrder>
+  </ThingDef>
+  <ThingDef ParentName="LR_TrackBase">
+    <defName>LR_PlatformStation</defName>
+    <rotatable>true</rotatable><defaultPlacingRot>North</defaultPlacingRot>
+    <label>single-platform rail station</label>
+    <thingClass>LocalRail.Building_RailStation</thingClass>
+    <designationCategory>Misc</designationCategory>
+    <size>(3,3)</size>
+    <description>A free rotatable 3x3 single-platform station with a three-cell through rail. Select its platform in a 2-16 stop shuttle or closed loop route. Dwell supports typed seconds and automatic boarding/loading time. Manage all named, colored routes in the Rail tab.</description>
+    <graphicData>
+      <texPath>LocalRail/Station</texPath>
+      <color>(1,1,1)</color>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(3.1,3.1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+    </statBases>
+    <uiOrder>3001</uiOrder>
+  </ThingDef>
+  <ThingDef Name="LR_TrainBase" ParentName="BuildingBase">
+    <defName>LR_Train</defName>
+    <label>local rail shuttle</label>
+    <thingClass>LocalRail.Building_RailTrain</thingClass>
+    <description>A permanent four-seat train on a named, colored shuttle or loop route. Runs even when empty, carrying up to twelve cargo stack slots. Actual cargo icons appear on the roof; select the train for names and quantities. Passengers retain their resources and original work. Each route reserves distinct track cells.</description>
+    <graphicData>
+      <texPath>LocalRail/CartTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(3.2,2.8)</drawSize>
+    </graphicData>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Item</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0</fillPercent>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>0</MarketValue>
+      <Flammability>0</Flammability>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="LR_TrainBase">
+    <defName>LR_PassengerTrain</defName>
+    <label>ordinary passenger train</label>
+    <description>A permanent four-seat passenger train. Accepts manually loaded cargo, but does not automatically collect warehouse inventory. Switch train type in the route editor.</description>
+    <graphicData><color>(1,0.93,0.8)</color></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="LR_TrainBase">
+    <defName>LR_AutomaticTrain</defName>
+    <label>automatic transport train</label>
+    <description>A permanent train that loads warehouse inventory and unloads it at assigned platforms even with no passengers. Four passenger seats and twelve cargo stack slots; supports mixed or freight-only operation.</description>
+    <graphicData><color>(0.72,0.94,1)</color></graphicData>
+  </ThingDef>
+  <DrawStyleCategoryDef>
+    <defName>LR_TrackLines</defName>
+    <styles>
+      <li>LR_DiagonalLine</li>
+      <li>Line</li>
+    </styles>
+  </DrawStyleCategoryDef>
+  <DrawStyleDef>
+    <defName>LR_DiagonalLine</defName>
+    <label>diagonal rail line</label>
+    <drawStyleType>LocalRail.DrawStyle_RailDiagonal</drawStyleType>
+    <drawOutline>false</drawOutline>
+    <canSnap>false</canSnap>
+    <uiIconPath>LocalRail/Track</uiIconPath>
+  </DrawStyleDef>
+  <JobDef>
+    <defName>LR_LoadFreight</defName>
+    <driverClass>LocalRail.JobDriver_LoadFreight</driverClass>
+    <reportString>loading freight at the rail station.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+</Defs>
+
+

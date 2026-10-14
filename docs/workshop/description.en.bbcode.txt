@@ -1,0 +1,66 @@
+[h1]Let colonists take the train to work—and let cargo travel on its own.[/h1]
+
+Local Rail adds physical tracks and permanent passenger/freight trains to a single colony map. Connect homes, farms, mines, and warehouses. Colonists can board suitable trains and continue their original jobs after arrival. Automatic trains also move warehouse stock with nobody aboard.
+
+[b]Current version: 0.10.0 · Pre-Alpha[/b]
+This is a playable early version. Core passenger travel, freight delivery, route management, and saves with cargo in transit have been tested in-game. Artwork, balance, interaction, and compatibility are still under development.
+
+[h2]Features[/h2]
+[list]
+[*][b]Automatic commuting:[/b] Player-controlled human colonists use trains during supported long-distance job movement, retain carried resources, and continue their original jobs.
+[*][b]Operating routes:[/b] Each route has one permanent train and supports 2–16 stops, reversing shuttle services, and physically closed loops. Trains continue running when empty.
+[*][b]Two train types:[/b] Ordinary trains carry passengers and manually deposited freight. Automatic trains additionally collect warehouse stock and can run as mixed passenger/freight services or freight-only services, without riders or a driver.
+[*][b]Multiple platforms:[/b] Rotatable one-, two-, and four-platform stations and warehouses, with separate connections for independent routes.
+[*][b]Automatic freight:[/b] Assign a default inventory destination or item-specific dispatch rules. Cargo unloads at its designated platform. Full or rejecting destinations leave it aboard for another visit and produce a notification without pausing the game.
+[*][b]Central management:[/b] The Rail tab manages routes, platforms, and dwell. Includes names, colors, map arrows, stop markers, and camera movement while selecting platforms.
+[*][b]Practical dwell controls:[/b] Enter game seconds directly or use automatic management with minimum and maximum dwell times, allowing time for passengers and loading work.
+[*][b]Tracks and rail doors:[/b] Straight and diagonal rails, double-track modules, and single- or double-track automatic doors. Rail doors appear under Structure, accept metallic materials, and use vanilla material durability and opening-speed properties.
+[*][b]Visible status:[/b] Four seats and twelve cargo stack slots per train. Real cargo icons, quantities, passengers, and destinations are visible. Colonists have a Rail travel decision diagnostic.
+[/list]
+
+[h2]Requirements[/h2]
+[list]
+[*]RimWorld 1.7. The current in-game test build is 1.7.4977 rev1248.
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] is required. Load Harmony before Local Rail.
+[*]No DLC or additional vehicle framework is required.
+[*]English and Simplified Chinese interfaces are included.
+[/list]
+
+[h2]Getting started: passengers[/h2]
+[olist]
+[*]Build at least two stations or warehouses under Misc and connect their chosen platform tracks. Stations and rail doors include rails; do not duplicate tracks inside their footprints.
+[*]Open Rail and create a route. Select stations and exact platforms in order, then choose a name, color, and train type.
+[*]Choose a shuttle or loop. A loop needs a real connection from its last stop back to its first. Shuttles may retrace their own track segments.
+[*]Confirm the route and enable automatic travel and rail preference in the mod settings. Eligible, undrafted colonists will walk to a platform, wait, and board automatically.
+[*]If a colonist keeps walking, select them and open Rail travel decision to inspect nearby stations, their current job, station access, waiting costs, and the rejection reason. The default station access radius is 80 tiles and can be adjusted in settings.
+[/olist]
+
+[h2]Getting started: unmanned freight[/h2]
+[olist]
+[*]Create a route serving freight warehouses and choose an Automatic train. Both train types operate on their own, but only automatic trains collect warehouse inventory.
+[*]Set the sending warehouse's Default inventory destination to a platform on the same route. Use dispatch rules for different item destinations.
+[*]Have colonists haul resources into the warehouse using ordinary hauling work. The train loads stock during its stop and transports it even with zero passengers.
+[*]Cargo unloads at its destination. Receiving warehouses respect storage filters and capacity. Delivered cargo is not automatically re-exported by default, reducing return loops. Colonists can then haul it into suitable ordinary storage.
+[/olist]
+
+[h2]Current design and limitations[/h2]
+[list]
+[*][b]Pre-Alpha balance:[/b] Tracks, passenger stations, and freight warehouses currently have no construction resource cost, although construction work is still required. Metallic rail doors cost materials. There are currently no power, fuel, or research requirements; balance may change later.
+[*][b]Exclusive route tracks:[/b] One train per route. Different routes cannot share track cells. Separate platforms in one building may serve different routes, but they need separate connections and do not automatically connect to each other.
+[*][b]Single-map transport:[/b] World-map railways, automatic transfers between routes, shared-track signals, passing traffic, and multiple trains per route are not supported yet.
+[*][b]Conditional boarding:[/b] Automatic travel supports movement stages of common jobs such as hauling, mining, planting, harvesting, plant cutting, research, cleaning, and repair. Drafted, downed, or mentally affected pawns, map-exit jobs, and carrying another living pawn do not use automatic commuting. Colonists may still walk if station access is too long, waiting is excessive, or the route is unsafe.
+[*][b]Physical connections:[/b] Switching between platforms requires actual track connections outside the building. Some stop orders in complex networks with multiple loops may be rejected by the current path selection; use the connection message to adjust the track layout or stop order.
+[*][b]Early visuals and collision:[/b] The mod currently uses vanilla-inspired placeholder artwork. Full collision for the width of a train has not been implemented. Rail doors are for horizontal or vertical passages, not diagonal traversal through corners.
+[*][b]Mod compatibility:[/b] Main features have been tested with Core and Harmony. Other job, pathfinding, vehicle, and large mod collections have not been comprehensively tested.
+[/list]
+
+[h2]AI-generated content disclosure[/h2]
+Generative AI tools assisted with portions of the code and description text, and some custom placeholder textures were generated with AI. Referenced vanilla pawn and item graphics come from RimWorld. Artwork and visuals remain in development.
+
+[h2]Save compatibility and backups[/h2]
+Saving and loading routes and cargo in transit have been tested, including upgrading a 0.9 save to 0.10. Adding the mod to arbitrary existing saves, large mod collections, downgrading, and removal have not been comprehensively tested. Pre-Alpha updates may change definitions or save data; lossless migration of every older save is not guaranteed.
+
+[b]Before first adding, updating, or removing this mod, make a separate manual save backup outside your autosave rotation.[/b] Test on a copy first and retain your game/mod versions and mod list. Avoid removal while rail buildings, passenger trips, or cargo in transit remain. Clearing them does not establish that uninstalling is safe.
+
+[h2]Feedback[/h2]
+Please include game/mod versions, your mod list, reproduction steps, route/platform screenshots, and relevant logs. For boarding issues, also include the Rail travel decision result. Thank you for helping this early railway system develop.

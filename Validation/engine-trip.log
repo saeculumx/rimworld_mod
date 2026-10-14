@@ -1,0 +1,247 @@
+22:02:58  INFO Command line arguments: -NoFileLog -NoCrashDialog -DisableLogStackTraces -savedatafolder=D:\rimworld_mod\.local\LocalRailTest -localrail-smoke -Headless
+22:02:58  INFO RimWorld 1.7.4977 rev1248
+22:02:58  INFO Save data folder overridden to D:\rimworld_mod\.local\LocalRailTest
+22:02:59  INFO Harmony Mod v3.0.0.0; Harmony library v3.0.0.0-rc.2
+22:02:59  INFO [LocalRail] Automatic rail POC loaded. Tested build target: 1.7.4977.
+22:03:03  WARN DrawTexture (Graphics.cs:434): Stub! You may not get expected results!
+22:03:03  WARN Deferred loading: 670 textures have no pixels, the pack or cache could not supply them: D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\World\WorldMacro.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Other\FogOfWar.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Weather\Overlays\SporeGlowOverlay.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\TargetHighlight_Side.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\DiagonalStripesTile.png
+22:03:05  INFO Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - localrail.automatic.poc
+22:03:08  INFO [LocalRailSmoke] PASS new station has real 3x3 footprint
+22:03:08  INFO [LocalRailSmoke] PASS 3x3 station appears in normal Misc architect designators
+22:03:08  INFO [LocalRailSmoke] PASS unconfigured station inspect string has no empty lines
+22:03:08  INFO [LocalRailSmoke] PASS large station includes three through rail cells
+22:03:08  INFO [LocalRailSmoke] PASS native orthogonal drag line remains supported
+22:03:08  INFO [LocalRailSmoke] PASS LR_Track requires no materials
+22:03:08  INFO [LocalRailSmoke] PASS LR_Track free blueprint produces ready empty frame
+22:03:08  INFO [LocalRailSmoke] PASS LR_Track native construction completes
+22:03:08  INFO [LocalRailSmoke] PASS LR_PlatformStation requires no materials
+22:03:08  INFO [LocalRailSmoke] PASS LR_PlatformStation free blueprint produces ready empty frame
+22:03:08  INFO [LocalRailSmoke] PASS LR_PlatformStation native construction completes
+22:03:09  INFO [LocalRailSmoke] PASS unconfigured tracks never summon passenger trains
+22:03:09  INFO [LocalRailSmoke] PASS route creates exactly one real persistent train
+22:03:09  INFO [LocalRailSmoke] PASS duplicate service on same connected track rejected
+22:03:11  INFO [LocalRailSmoke] PASS same empty train completes outbound and return trips without passengers
+22:03:11  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 392/1692 ticks.
+22:03:11  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:11  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:11  INFO [LocalRailSmoke] PASS persistent train interpolates inside active segment
+22:03:11  INFO [LocalRailSmoke] PASS passenger draw position follows assigned train seat
+22:03:12  INFO [LocalRail] Pansy: arrived at service stop, resuming original target.
+22:03:12  INFO [LocalRailSmoke] PASS long trip uses existing service and releases passenger without deleting train
+22:03:13  INFO [LocalRailSmoke] PASS short trip remains walking
+22:03:13  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 564/1708 ticks.
+22:03:13  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:13  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:13  INFO [LocalRailSmoke] PASS hauling passenger keeps same steel stack and original job on train
+22:03:15  INFO [LocalRail] Pansy: arrived at service stop, resuming original target.
+22:03:15  INFO [LocalRailSmoke] PASS resource hauling automatically uses established train
+22:03:15  INFO [LocalRailSmoke] PASS same 25 steel delivered to native stockpile after ride
+22:03:16  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 731/1708 ticks.
+22:03:17  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:21  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:21  INFO [LocalRailSmoke] PASS hauling passenger keeps same steel stack and original job on train
+22:03:24  INFO [LocalRail] Pansy: LR_NoConnection, resuming original target.
+22:03:24  INFO [LocalRailSmoke] PASS broken track releases hauling passenger with cargo and job intact
+22:03:24  INFO [LocalRailSmoke] PASS broken track stops service and resumes original delivery target
+22:03:34  INFO [LocalRailSmoke] PASS interrupted cargo still delivered exactly once
+22:03:34  INFO [LocalRailSmoke] PASS track repair automatically restores same train service
+22:03:34  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 435/1708 ticks.
+22:03:34  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:34  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:34  INFO [LocalRailSmoke] PASS hauling passenger keeps same steel stack and original job on train
+22:03:35  INFO [LocalRail] Pansy: service paused, resuming original target.
+22:03:35  INFO [LocalRailSmoke] PASS pausing parks persistent train and releases passenger with cargo
+22:03:39  INFO [LocalRailSmoke] PASS paused passenger completes original steel delivery
+22:03:39  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 408/1686 ticks.
+22:03:39  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:41  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:41  INFO [LocalRailSmoke] PASS mining job remains pending during service ride
+22:03:42  INFO [LocalRail] Pansy: arrived at service stop, resuming original target.
+22:03:42  INFO [LocalRailSmoke] PASS mining resumes at original target after scheduled service
+22:03:42  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 674/1692 ticks.
+22:03:42  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:43  INFO [LocalRailSmoke] PASS drafting releases rider and retains persistent train
+22:03:43  INFO [LocalRail] Porco: planned 100 rail cells, estimated 1041/1481 ticks.
+22:03:43  INFO [LocalRail] Kather: planned 100 rail cells, estimated 1046/1615 ticks.
+22:03:43  INFO [LocalRail] Riss: planned 100 rail cells, estimated 1036/1421 ticks.
+22:03:43  INFO [LocalRail] Luxemburg: planned 100 rail cells, estimated 1040/1528 ticks.
+22:03:43  INFO [LocalRail] Chantal: planned 100 rail cells, estimated 1036/1421 ticks.
+22:03:43  INFO [LocalRail] Vitaly: planned 100 rail cells, estimated 1036/1421 ticks.
+22:03:43  INFO [LocalRail] Valdez: planned 100 rail cells, estimated 1036/1421 ticks.
+22:03:43  INFO [LocalRail] Lover: planned 100 rail cells, estimated 1036/1421 ticks.
+22:03:43  INFO [LocalRail] Toni: planned 100 rail cells, estimated 1033/1421 ticks.
+22:03:43  INFO [LocalRail] Krystal: planned 100 rail cells, estimated 1033/1421 ticks.
+22:03:43  INFO [LocalRail] Nerhesi: planned 100 rail cells, estimated 1029/1308 ticks.
+22:03:43  INFO [LocalRail] Michel: planned 100 rail cells, estimated 1033/1421 ticks.
+22:03:43  INFO [LocalRail] Porco: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Riss: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Chantal: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Vitaly: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Nerhesi: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Kather: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Luxemburg: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Valdez: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Lover: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Toni: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Krystal: waiting for existing service 1.
+22:03:43  INFO [LocalRail] Michel: waiting for existing service 1.
+22:03:45  INFO [LocalRail] Porco: boarded train 17797, service 1, seat 0.
+22:03:45  INFO [LocalRail] Riss: boarded train 17797, service 1, seat 1.
+22:03:45  INFO [LocalRail] Chantal: boarded train 17797, service 1, seat 2.
+22:03:45  INFO [LocalRail] Vitaly: boarded train 17797, service 1, seat 3.
+22:03:46  INFO [LocalRail] Vitaly: arrived at service stop, resuming original target.
+22:03:46  INFO [LocalRail] Chantal: arrived at service stop, resuming original target.
+22:03:46  INFO [LocalRail] Riss: arrived at service stop, resuming original target.
+22:03:46  INFO [LocalRail] Porco: arrived at service stop, resuming original target.
+22:03:47  INFO [LocalRail] Nerhesi: boarded train 17797, service 1, seat 0.
+22:03:47  INFO [LocalRail] Kather: boarded train 17797, service 1, seat 1.
+22:03:47  INFO [LocalRail] Luxemburg: boarded train 17797, service 1, seat 2.
+22:03:47  INFO [LocalRail] Valdez: boarded train 17797, service 1, seat 3.
+22:03:48  INFO [LocalRail] Nerhesi: arrived at service stop, resuming original target.
+22:03:48  INFO [LocalRail] Valdez: arrived at service stop, resuming original target.
+22:03:48  INFO [LocalRail] Luxemburg: arrived at service stop, resuming original target.
+22:03:48  INFO [LocalRail] Kather: arrived at service stop, resuming original target.
+22:03:50  INFO [LocalRail] Lover: boarded train 17797, service 1, seat 0.
+22:03:50  INFO [LocalRail] Toni: boarded train 17797, service 1, seat 1.
+22:03:50  INFO [LocalRail] Krystal: boarded train 17797, service 1, seat 2.
+22:03:50  INFO [LocalRail] Michel: boarded train 17797, service 1, seat 3.
+22:03:51  INFO [LocalRail] Michel: arrived at service stop, resuming original target.
+22:03:51  INFO [LocalRail] Krystal: arrived at service stop, resuming original target.
+22:03:51  INFO [LocalRail] Toni: arrived at service stop, resuming original target.
+22:03:51  INFO [LocalRail] Lover: arrived at service stop, resuming original target.
+22:03:51  INFO [LocalRailSmoke] PASS twelve passengers all use one scheduled train
+22:03:51  INFO [LocalRailSmoke] PASS four-seat capacity enforced and excess passengers wait for later trips
+22:03:51  INFO [LocalRailSmoke] PASS complete journey planning remains capped at two per tick
+22:03:51  INFO [LocalRailSmoke] PASS separate connected networks each allow one train
+22:03:51  INFO [LocalRailSmoke] PASS merging rail networks suspends second automatic train
+22:03:51  INFO [LocalRailSmoke] PASS branch on occupied connected network cannot create another service
+22:03:51  INFO [LocalRailSmoke] PASS network conflict retains second train parked without duplication
+22:03:51  INFO [LocalRailSmoke] PASS splitting networks restores independent services
+22:03:51  INFO [LocalRailSmoke] PASS removing route removes only its own train
+22:03:51  INFO [LocalRailSmoke] PASS existing service can be edited into ordered three-stop route without a second train
+22:03:51  INFO [LocalRailSmoke] PASS three-stop route has correct intermediate path index and one train
+22:03:51  INFO [LocalRail] Fernand: planned 100 rail cells, estimated 1261/1601 ticks.
+22:03:51  INFO [LocalRailSmoke] PASS intermediate station honors configured 180-tick dwell
+22:03:51  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 582/893 ticks.
+22:03:51  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:51  INFO [LocalRail] Fernand: waiting for existing service 1.
+22:03:52  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:52  INFO [LocalRail] Fernand: boarded train 17797, service 1, seat 1.
+22:03:53  INFO [LocalRail] Pansy: arrived at service stop, resuming original target.
+22:03:53  INFO [LocalRailSmoke] PASS passenger alights at intermediate station and continues original target
+22:03:53  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 284/802 ticks.
+22:03:53  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:53  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:53  INFO [LocalRail] Pansy: arrived at service stop, resuming original target.
+22:03:53  INFO [LocalRail] Fernand: arrived at service stop, resuming original target.
+22:03:54  INFO [LocalRailSmoke] PASS passenger boards intermediate stop in correct direction for final station
+22:03:54  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 572/1692 ticks.
+22:03:54  INFO [LocalRail] Pansy: waiting for existing service 1.
+22:03:54  INFO [LocalRail] Pansy: boarded train 17797, service 1, seat 0.
+22:03:55  INFO [LocalRail] Pansy: arrived at service stop, resuming original target.
+22:03:55  INFO [LocalRailSmoke] PASS return passenger travels through intermediate stop to first station
+22:03:55  INFO [LocalRailSmoke] PASS diagonal drag style creates true consecutive diagonal cells
+22:03:55  INFO [LocalRailSmoke] PASS real engine diagonal service uses weighted four-tick segments
+22:03:55  INFO [LocalRailSmoke] PASS diagonal travel job accepted by native pawn job tracker
+22:03:55  INFO [LocalRail] Diver: planned 22 rail cells, estimated 168/478 ticks.
+22:03:55  INFO [LocalRail] Diver: waiting for existing service 3.
+22:03:55  INFO [LocalRail] Diver: boarded train 18033, service 3, seat 0.
+22:03:55  INFO [LocalRailSmoke] PASS diagonal train uses interpolated position and 45-degree body heading
+22:03:56  INFO [LocalRail] Diver: arrived at service stop, resuming original target.
+22:03:56  INFO [LocalRailSmoke] PASS diagonal passenger arrives and resumes native final path (rode True, animated True, moving True)
+22:03:56  INFO [LocalRailSmoke] PASS diagonal train stops before cutting a newly blocked wall corner
+22:03:56  INFO [LocalRailSmoke] PASS diagonal train resumes after corner obstruction removed
+22:03:58  INFO [LocalRailSmoke] PASS native loading job moves same 31 steel into real train freight holder
+22:03:59  INFO [LocalRailSmoke] PASS freight passes intermediate stop without unloading early
+22:04:00  INFO [LocalRailSmoke] PASS train unloads exactly 31 steel at requested final station
+22:04:01  INFO [LocalRailSmoke] PASS removing route drops loaded freight without loss or duplication
+22:04:01  INFO [LocalRailSmoke] PASS three-stop service recreates after explicit route removal
+22:04:02  INFO [LocalRail] Pansy: planned 100 rail cells, estimated 588/1708 ticks.
+22:04:02  INFO [LocalRail] Pansy: waiting for existing service 4.
+22:04:02  INFO [LocalRail] Pansy: boarded train 18058, service 4, seat 0.
+22:04:02  INFO [LocalRailSmoke] PASS hauling passenger keeps same steel stack and original job on train
+22:04:02  INFO [LocalRailSmoke] PASS save includes independently loaded freight and carrying passenger together
+22:04:02  INFO [LocalRailSmoke] PASS saved delivery destination is empty and other workers are isolated
+22:04:02  INFO [LocalRailSmoke] PASS save created with persistent train and carried cargo in transit
+22:04:02  INFO [LocalRailSmoke] COMPLETED 64 real-engine checks.
+22:04:02  WARN Persistent allocation 0x1856A482CC8 (479616 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856B44E048 (8633076 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A4F8678 (479616 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558A68708 (400 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856BC94048 (5737232 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558A67988 (400 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856C215048 (3357312 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856C556048 (2877696 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A56D818 (479616 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A5E29B8 (479616 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B0453E8 (4 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793AC8 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A7CBA38 (7816 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793A68 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A7CD8D8 (294912 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793C48 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8158F8 (7816 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793EE8 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A817798 (7816 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A819638 (250000 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8566E8 (250000 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A794188 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A893798 (163840 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C19DF8 (952 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A744AE8 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18540172ED8 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C6BCD8 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8BB7B8 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793C78 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B045428 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A744B88 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8CB7D8 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C68D08 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8CCC38 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793FA8 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B045448 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A744C28 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8DCC58 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C69258 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8DE0B8 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793B88 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B045EA8 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A744D68 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8EE0D8 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C697A8 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8EF538 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A794068 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B045B48 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A744F48 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A8FF558 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C69CF8 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A9009B8 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793BB8 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B0459E8 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A744FE8 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A9109D8 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C6A248 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A911E38 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793E58 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B045CC8 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A745088 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A921E58 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C6A798 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A9232B8 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793FD8 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B045F48 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A7453A8 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A9332D8 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C6ACE8 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A934738 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A793D68 (24 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1855B045A88 (8 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A7451C8 (128 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A944758 (5184 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x18558C6B238 (1296 bytes, align 8) was not freed before shutdown.
+22:04:02  WARN Persistent allocation 0x1856A945BB8 (65536 bytes, align 8) was not freed before shutdown.
+22:04:02 

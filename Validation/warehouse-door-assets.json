@@ -1,0 +1,23 @@
+{
+  "mode": "built-in imagegen",
+  "assets": [
+    {
+      "file": "D:\\rimworld_mod\\Mod\\LocalRail\\Textures\\LocalRail\\WarehouseDeck.png",
+      "original": "C:\\Users\\XHYX0\\.codex\\generated_images\\01a13607-7351-7751-aea7-8143221155b0\\exec-6ee59622-0b6c-4c47-bdef-03dd6021d8b5.png",
+      "prompt": "Use case: stylized-concept. Asset type: production transparent sprite for a RimWorld vanilla-style rail freight warehouse loading platform. Strict orthographic top-down view, long horizontal rectangle ratio 4:1, centred on a landscape canvas. A low empty freight loading deck: muted brown wooden planks inside a thick grey steel perimeter, olive-green thin safety edges, small dark bolts, one tiny control cabinet at far left edge and one tiny folded loading ramp at far right. Wide completely EMPTY middle area for actual game resource piles, no permanent crates. Clean thick charcoal outlines, flat simple shading, low saturation, readable at 100 pixels. No roof, no walls, no people, no track or train, no floor outside the deck, no lettering, no yellow hazard stripes, no shadow, no perspective or isometric view. Real transparent background and clean alpha. Suitable to repeat on the storage rows beside two independent rail lines. Landscape 1536x1024 canvas.",
+      "width": 2172,
+      "height": 724,
+      "cornerAlpha": 0,
+      "sha256": "C1ECD397CA50342A5D3A220E5B9891C9DCF80CF17A9D183466F83FC530FD1CC1"
+    },
+    {
+      "file": "D:\\rimworld_mod\\Mod\\LocalRail\\Textures\\LocalRail\\DoubleDoorLeaf.png",
+      "original": "C:\\Users\\XHYX0\\.codex\\generated_images\\01a13607-7351-7751-aea7-8143221155b0\\exec-144040b8-75bb-4dc1-b84b-96b14cdefd8a.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent neutral metal sliding gate leaf sprite for a RimWorld vanilla-style three-cell-wide double-track automatic door. Strict orthographic top-down overhead view of ONE rectangular low metal sliding panel, long axis horizontal, length to thickness ratio 3:1. Muted neutral grey sheet steel divided into three broad panels, thick dark charcoal edge outline, a simple narrow steel spine, very few black bolts, no colored paint so the game can tint by construction material. Crisp flat vanilla game shading, minimal detail readable at 60 pixels. Panel only: NO doorway, no fixed frame, no tracks, no ground, no walls, no people, no lettering, no hazard stripes, no cast shadow, no perspective or isometric view. Centered landscape canvas, true transparent background and clean alpha. It will be rendered as mirrored sliding half-panels by game code.",
+      "width": 2172,
+      "height": 724,
+      "cornerAlpha": 0,
+      "sha256": "D4B8C98F31A47E3CFAB8507BF3F2EF2429A02AD44BD1EA94D406D2E18E07D5C9"
+    }
+  ]
+}

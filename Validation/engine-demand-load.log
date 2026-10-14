@@ -1,0 +1,75 @@
+16:58:33  INFO Command line arguments: -NoFileLog -NoCrashDialog -DisableLogStackTraces -savedatafolder=D:\rimworld_mod\.local\LocalRailTestDemand -localrail-demand-load-smoke -Headless
+16:58:33  INFO RimWorld 1.7.4977 rev1248
+16:58:33  INFO Save data folder overridden to D:\rimworld_mod\.local\LocalRailTestDemand
+16:58:34  INFO Harmony Mod v3.0.0.0; Harmony library v3.0.0.0-rc.2
+16:58:34  INFO [LocalRail] Automatic rail POC loaded. Tested build target: 1.7.4977.
+16:58:38  WARN DrawTexture (Graphics.cs:434): Stub! You may not get expected results!
+16:58:38  WARN Deferred loading: 670 textures have no pixels, the pack or cache could not supply them: D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Other\FogOfWar.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\DiagonalStripesTile.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\TargetHighlight_Side.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Weather\Overlays\SporeGlowOverlay.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\World\WorldMacro.psd
+16:58:38  INFO Loading game from file LocalRailDemandInTransit with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - localrail.automatic.poc
+16:58:41  INFO [RailDemandSmoke] PASS reload retains edited automatic type and original train identity
+16:58:41  INFO [RailDemandSmoke] PASS reload retains default dispatch destination without advanced rules
+16:58:41  INFO [RailDemandSmoke] PASS reload retains real unmanned cargo
+16:58:42  INFO [RailDemandSmoke] PASS reloaded unmanned train completes stock delivery
+16:58:43  WARN Persistent allocation 0x2FA897F0CC8 (479616 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA8A4C1048 (8633076 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA8986A778 (479616 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F79AEB48 (400 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA8AD03048 (5737232 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F79ADDC8 (400 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA8B285048 (3357312 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA8B5CE048 (2877696 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA898DF918 (479616 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89954AB8 (479616 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319FA02B128 (4 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F7B8D8A8 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FABE6D25B8 (7816 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F78B4D68 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA899DEC18 (294912 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F78B50C8 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89A26C38 (7816 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F78B50F8 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319DEE617C8 (7816 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89A28AD8 (250000 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89A65B88 (250000 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F78B52A8 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89AA2C38 (163840 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F779C498 (952 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319DCE397B8 (128 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89ACAC58 (5184 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F7806878 (1296 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89ACC0B8 (65536 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89869928 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA899CA938 (8 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319DCE398F8 (128 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89ADC0D8 (5184 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F78038A8 (1296 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89ADD538 (65536 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA898692F8 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA899CA958 (8 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319DCE39678 (128 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89AED558 (5184 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F7807DB8 (1296 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89AEE9B8 (65536 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA898694D8 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319FA02AB88 (8 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319DCE395D8 (128 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89AFE9D8 (5184 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F7807868 (1296 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89AFFE38 (65536 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89869568 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319FA02AE68 (8 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319DCE39858 (128 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89B0FE58 (5184 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F7804348 (1296 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89B112B8 (65536 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA85EDE4C8 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319FA02B4E8 (8 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319DCE39A38 (128 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89B212D8 (5184 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x319F7808308 (1296 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA89B22738 (65536 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN Persistent allocation 0x2FA85EDE888 (24 bytes, align 8) was not freed before shutdown.
+16:58:43  WARN 

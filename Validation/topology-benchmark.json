@@ -1,0 +1,10 @@
+{
+  "cells": 1000,
+  "iterations": 2000,
+  "uncachedMs": 406.8263,
+  "cachedMs": 0.2505,
+  "uncachedAllocatedBytes": 509264040,
+  "cachedAllocatedBytes": 40,
+  "cachedSearches": 1,
+  "cacheHits": 2019
+}

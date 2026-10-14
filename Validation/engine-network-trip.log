@@ -1,0 +1,143 @@
+14:09:15  INFO Command line arguments: -NoFileLog -NoCrashDialog -DisableLogStackTraces -savedatafolder=D:\rimworld_mod\.local\LocalRailTestNetwork -localrail-network-smoke -Headless
+14:09:15  INFO RimWorld 1.7.4977 rev1248
+14:09:15  INFO Save data folder overridden to D:\rimworld_mod\.local\LocalRailTestNetwork
+14:09:16  INFO Harmony Mod v3.0.0.0; Harmony library v3.0.0.0-rc.2
+14:09:17  INFO [LocalRail] Automatic rail POC loaded. Tested build target: 1.7.4977.
+14:09:21  WARN DrawTexture (Graphics.cs:434): Stub! You may not get expected results!
+14:09:21  WARN Deferred loading: 671 textures have no pixels, the pack or cache could not supply them: D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Other\FogOfWar.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\DiagonalStripesTile.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\TargetHighlight_Side.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Weather\Overlays\SporeGlowOverlay.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Weather\LightningBolt.psd
+14:09:24  INFO Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - localrail.automatic.poc
+14:09:26  INFO [RailNetworkSmoke] PASS LR_PlatformStation visible in actual architect menu
+14:09:26  INFO [RailNetworkSmoke] PASS LR_PlatformStation remains free of materials
+14:09:26  INFO [RailNetworkSmoke] PASS LR_TwoPlatformStation visible in actual architect menu
+14:09:26  INFO [RailNetworkSmoke] PASS LR_TwoPlatformStation remains free of materials
+14:09:26  INFO [RailNetworkSmoke] PASS LR_FourPlatformStation visible in actual architect menu
+14:09:26  INFO [RailNetworkSmoke] PASS LR_FourPlatformStation remains free of materials
+14:09:26  INFO [RailNetworkSmoke] PASS native Rail main tab instantiates management window
+14:09:26  INFO [RailNetworkSmoke] PASS multi-platform buildings contain independent full-width track rows
+14:09:26  INFO [RailNetworkSmoke] PASS same station building does not implicitly join its tracks
+14:09:26  INFO [RailNetworkSmoke] PASS connectivity report distinguishes correct destination platforms
+14:09:26  INFO [RailNetworkSmoke] PASS south platform route creates persistent train
+14:09:26  INFO [RailNetworkSmoke] PASS north platform route creates independent persistent train
+14:09:26  INFO [RailNetworkSmoke] PASS overlapping track rejected with conflicting route name
+14:09:26  INFO [RailNetworkSmoke] PASS outside crossover explicitly joins platform networks
+14:09:26  INFO [RailNetworkSmoke] PASS dwell form accepts fractional seconds without a slider
+14:09:26  INFO [RailNetworkSmoke] PASS dwell form rejects invalid text without committing
+14:09:26  INFO [RailNetworkSmoke] PASS dwell form rejects automatic minimum above maximum
+14:09:27  INFO [RailNetworkSmoke] PASS breaking south track leaves north platform route moving in same connected network
+14:09:27  INFO [RailNetworkSmoke] PASS platform connection cache invalidates on track removal
+14:09:27  INFO [RailNetworkSmoke] PASS repair restores two disjoint routes without another train
+14:09:27  INFO [RailNetworkSmoke] PASS route reconfiguration retains train and chosen platform
+14:09:27  INFO [RailNetworkSmoke] PASS native loading job accepted with explicit route and platform targets
+14:09:27  INFO [RailNetworkSmoke] PASS automatic dwell holds beyond minimum for nearby real loading worker
+14:09:27  INFO [RailNetworkSmoke] PASS train loads same real freight with explicit platform pair
+14:09:28  INFO [RailNetworkSmoke] PASS freight delivered intact within destination platform unload radius
+14:09:28  INFO [RailNetworkSmoke] PASS route reconfiguration retains train and chosen platform
+14:09:28  INFO [RailNetworkSmoke] PASS native loading job accepted with explicit route and platform targets
+14:09:29  INFO [RailNetworkSmoke] PASS automatic maximum departs while loader is still working
+14:09:32  INFO [RailNetworkSmoke] PASS late loading order waits for next visit without losing cargo
+14:09:32  INFO [RailNetworkSmoke] PASS route reconfiguration retains train and chosen platform
+14:09:32  INFO [RailNetworkSmoke] PASS isolated native destination stockpile is clear and accepts steel
+14:09:32  INFO [RailNetworkSmoke] PASS native hauling job accepted for multi-platform passenger
+14:09:32  INFO [LocalRail] Prince: planned 100 rail cells, estimated 508/1497 ticks.
+14:09:32  INFO [LocalRail] Prince: waiting for existing service 2.
+14:09:32  INFO [LocalRail] Prince: boarded train 10475, service 2, platform 2, seat 0.
+14:09:32  INFO [RailNetworkSmoke] PASS carrying passenger boards platform 2 and retains same original hauling job and steel
+14:09:33  INFO [LocalRail] Prince: arrived at service stop, resuming original target.
+14:09:34  INFO [RailNetworkSmoke] PASS platform 2 hauling passenger delivers exactly 25 steel to original stockpile
+14:09:34  INFO [RailNetworkSmoke] PASS four-stop ring validates real closing leg: 
+14:09:34  INFO [RailNetworkSmoke] PASS loop stores unique cells and includes weighted closing edge
+14:09:34  INFO [RailNetworkSmoke] PASS outbound retracing cannot masquerade as a closed loop
+14:09:40  INFO [RailNetworkSmoke] PASS empty loop crosses closing edge twice without endpoint reversal
+14:09:40  INFO [RailNetworkSmoke] PASS removing closing arc suspends loop rather than retracing outbound route
+14:09:40  INFO [RailNetworkSmoke] PASS repair restores same loop train
+14:09:40  INFO [RailNetworkSmoke] PASS route reconfiguration retains train and chosen platform
+14:09:40  INFO [RailNetworkSmoke] PASS native loading job accepted with explicit route and platform targets
+14:09:40  INFO [RailNetworkSmoke] PASS native route passenger job accepted
+14:09:40  INFO [LocalRail] Prince: planned 247 rail cells, estimated 294/411 ticks.
+14:09:40  INFO [LocalRail] Prince: waiting for existing service 3.
+14:09:40  INFO [LocalRail] Prince: boarded train 10736, service 3, platform 1, seat 0.
+14:09:40  INFO [RailNetworkSmoke] PASS passenger and freight board last ring stop towards first
+14:09:41  INFO [LocalRail] Prince: arrived at service stop, resuming original target.
+14:09:41  INFO [RailNetworkSmoke] PASS loop passenger resumes original target and freight unloads after closing edge
+14:09:41  INFO [RailNetworkSmoke] PASS existing loop switches reverse direction with same train
+14:09:41  INFO [RailNetworkSmoke] PASS route reconfiguration retains train and chosen platform
+14:09:41  INFO [RailNetworkSmoke] PASS native loading job accepted with explicit route and platform targets
+14:09:41  INFO [RailNetworkSmoke] PASS native route passenger job accepted
+14:09:41  INFO [LocalRail] Prince: planned 247 rail cells, estimated 294/411 ticks.
+14:09:41  INFO [LocalRail] Prince: waiting for existing service 3.
+14:09:41  INFO [LocalRail] Prince: boarded train 10736, service 3, platform 1, seat 0.
+14:09:41  INFO [RailNetworkSmoke] PASS reverse loop carries passenger and freight toward last listed stop
+14:09:42  INFO [RailNetworkSmoke] PASS saved colored multi-platform routes, automatic dwell and reverse-loop freight in transit
+14:09:42  INFO [RailNetworkSmoke] COMPLETED 51 checks.
+14:09:42  WARN Persistent allocation 0x1EF5CCC0088 (479616 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5C480048 (8633076 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CD36BC8 (479616 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A77D8A8 (400 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5DC9C048 (5737232 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A77E118 (400 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5E224048 (3357312 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5E566048 (2877696 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CDABD68 (479616 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CE20F08 (479616 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5BF54C48 (4 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31C27858 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CF52CF8 (7816 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31C27258 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CF54B98 (294912 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31C27438 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CF461B8 (7816 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31C27378 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CF9CBB8 (7816 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CF9EA58 (250000 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CFDBB08 (250000 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF51D775D8 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D018BB8 (163840 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A7DE5D8 (952 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A7AA238 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CF48058 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31F60928 (1296 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D040BD8 (65536 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A79FA18 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2D8E08 (8 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A7AA4B8 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D050BF8 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31F60E78 (1296 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D052058 (65536 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A79F4D8 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2D8CE8 (8 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A7AA698 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D062078 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31F5EE98 (1296 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D0634D8 (65536 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A79F718 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2D6B08 (8 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A7AAAF8 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D0734F8 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31F5D408 (1296 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D074958 (65536 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CD36948 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2D6F48 (8 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A667848 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D084978 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31F613C8 (1296 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D085DD8 (65536 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5CD369A8 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2D6B48 (8 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A6681A8 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D095DF8 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31F5D958 (1296 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D097258 (65536 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF503791E8 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2D68A8 (8 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2F50C8 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D0A7278 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF31F61918 (1296 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D0A86D8 (65536 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4A725BC8 (24 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2D6968 (8 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF4C2F66A8 (128 bytes, align 8) was not freed before shutdown.
+14:09:42  WARN Persistent allocation 0x1EF5D0B86F8 (5184 bytes, align 8) was not freed before shutdown.
+14:09:42 

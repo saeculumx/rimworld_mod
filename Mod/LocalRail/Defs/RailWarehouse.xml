@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="LR_TrackBase">
+    <defName>LR_DoubleTrack</defName><label>double-track rail module</label>
+    <description>A free 3x3 physical module with two independent parallel rail lines separated by a pedestrian lane. Drag places modules every three cells; rotate for north-south lines. Connect each line outside the module. Diagonal track uses individual rail cells.</description>
+    <thingClass>LocalRail.Building_RailDoubleTrack</thingClass><size>(3,3)</size><rotatable>true</rotatable><uiOrder>3006</uiOrder>
+    <drawStyleCategory>LR_ModuleLines</drawStyleCategory>
+    <statBases><MaxHitPoints>240</MaxHitPoints><WorkToBuild>180</WorkToBuild></statBases>
+  </ThingDef>
+  <DrawStyleDef><defName>LR_ModuleLine</defName><label>double-track modules</label><drawStyleType>LocalRail.DrawStyle_RailModules</drawStyleType><drawOutline>false</drawOutline><canSnap>false</canSnap><uiIconPath>LocalRail/Track</uiIconPath></DrawStyleDef>
+  <DrawStyleCategoryDef><defName>LR_ModuleLines</defName><styles><li>LR_ModuleLine</li></styles></DrawStyleCategoryDef>
+  <ThingDef Name="LR_WarehouseBase" ParentName="LR_MultiStationBase" Abstract="True">
+    <thingClass>LocalRail.Building_RailWarehouse</thingClass>
+    <graphicData><texPath>LocalRail/WarehouseDeck</texPath><graphicClass>LocalRail.Graphic_RailWarehouse</graphicClass><shaderType>Cutout</shaderType><drawSize>(5,5)</drawSize></graphicData>
+    <building><maxItemsInCell>3</maxItemsInCell></building>
+    <inspectorTabs><li>ITab_Storage</li></inspectorTabs>
+    <statBases><MaxHitPoints>600</MaxHitPoints><WorkToBuild>1200</WorkToBuild></statBases>
+  </ThingDef>
+  <ThingDef ParentName="LR_WarehouseBase">
+    <defName>LR_SinglePlatformWarehouse</defName><label>single-platform freight warehouse</label><size>(3,3)</size><uiOrder>3006.5</uiOrder>
+    <description>A free compact 3x3 industrial warehouse. One rotatable through rail platform and six native storage cells, three stacks per cell. Initially accepts all storable cargo. Configure native filters, priority and automatic dispatch rules. Each permanent freight or mixed train has twelve cargo stack slots.</description>
+    <graphicData><drawSize>(3,3)</drawSize></graphicData>
+    <statBases><MaxHitPoints>400</MaxHitPoints><WorkToBuild>700</WorkToBuild></statBases>
+  </ThingDef>
+  <ThingDef ParentName="LR_WarehouseBase">
+    <defName>LR_FreightWarehouse</defName><label>two-platform freight warehouse</label><size>(5,5)</size><uiOrder>3007</uiOrder>
+    <description>A free two-platform rail warehouse with vanilla storage filters and hauling priority. Storage occupies three non-track rows, three stacks per cell. Configure automatic dispatch rules by route, platform, destination and item type. Freight and mixed trains load actual stored resources and deliver at the exact destination platform. Failed unloading keeps cargo aboard and gives a non-pausing info message. Received cargo stays here unless onward transfer is enabled.</description>
+  </ThingDef>
+  <ThingDef ParentName="LR_WarehouseBase">
+    <defName>LR_FourPlatformWarehouse</defName><label>four-platform freight warehouse</label><size>(5,9)</size><uiOrder>3008</uiOrder>
+    <graphicData><drawSize>(5,9)</drawSize></graphicData>
+    <description>A free four-platform freight warehouse. Four independent rail rows and five storage rows support separate routes and specific destination platforms. Rotation changes tracks, storage and previews together. Automatic receiving/dispatch priorities support vanilla hauling to ordinary storage; manual priorities and filters remain available. Full or rejecting destinations do not stop trains; cargo is retained for the next visit.</description>
+    <statBases><MaxHitPoints>900</MaxHitPoints><WorkToBuild>1800</WorkToBuild></statBases>
+  </ThingDef>
+</Defs>
+

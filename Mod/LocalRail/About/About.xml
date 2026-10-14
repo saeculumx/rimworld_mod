@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Local Rail — Automatic Transit POC</name>
+  <author>LocalRail prototype</author>
+  <packageId>localrail.automatic.poc</packageId>
+  <modVersion>0.10.0</modVersion>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>ludeon.rimworld</li>
+  </loadAfter>
+  <description>Experimental single-map rail transit for RimWorld 1.7. Configurable station access defaults to 80 tiles, including ordinary doors; colonists expose travel diagnostics. Ordinary passenger trains accept manual freight; automatic trains collect depot inventory without riders, using a default destination or ordered dispatch rules. Train type is editable without replacing the vehicle. Free physical single/double tracks, rotatable passenger stations and 1/2/4-platform freight warehouses. Shuttles may retrace their own rails; logical visit indices survive saves. Vehicles show actual cargo icons, names and counts. Automatic depot priorities and delivered-stack tracking allow native hauling to normal storage without recollection loops. Metallic single and double-track automatic doors are in Structure, cost 40/80 stuff, and use vanilla material durability and opening speed. Doors open ahead of trains and protect both tails. Warehouses use native hauling/storage filters and ordered automatic dispatch rules; freight-only and mixed trains unload at exact route platforms. Blocked unloading retains actual cargo and emits non-pausing info messages. The Rail tab manages named, colored 2-16 stop shuttle/loop routes and typed/automatic dwell. Each route has one permanent train, four seats and twelve cargo stack slots. Original resources and jobs retained. No power, fuel, research or DLC; Harmony 1.7 required. Legacy 0.2-0.9 saves supported; old routes retain automatic freight capability. No shared-track signals, automatic cross-route transfers or full-width vehicle collision.</description>
+</ModMetaData>
+
+
+
+

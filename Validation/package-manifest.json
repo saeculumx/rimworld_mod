@@ -1,0 +1,12 @@
+{
+  "version": "0.10.0",
+  "game": "1.7.4977 rev1248",
+  "dllSHA256": "8AFE2EBEE3773403BBE7F6B253779F65D9906ADB978329955EEC6DF0F06E27E6",
+  "installedAllFilesMatch": true,
+  "zipAllFilesMatch": true,
+  "zipSHA256": "70CF40CE00C2120E68F09530CBBDB40F8CBA611DF90239833DE76FE87CEC16AB",
+  "zipBytes": 5125486,
+  "packageFileCount": 18,
+  "xmlFilesParsed": 11,
+  "bilingualKeyCount": 155
+}

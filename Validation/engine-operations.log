@@ -1,0 +1,132 @@
+16:58:54  INFO Command line arguments: -NoFileLog -NoCrashDialog -DisableLogStackTraces -savedatafolder=D:\rimworld_mod\.local\LocalRailTestOperations -localrail-operations-smoke -Headless
+16:58:54  INFO RimWorld 1.7.4977 rev1248
+16:58:54  INFO Save data folder overridden to D:\rimworld_mod\.local\LocalRailTestOperations
+16:58:55  INFO Harmony Mod v3.0.0.0; Harmony library v3.0.0.0-rc.2
+16:58:55  INFO [LocalRail] Automatic rail POC loaded. Tested build target: 1.7.4977.
+16:58:59  WARN DrawTexture (Graphics.cs:434): Stub! You may not get expected results!
+16:58:59  WARN Deferred loading: 671 textures have no pixels, the pack or cache could not supply them: D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Other\FogOfWar.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\DiagonalStripesTile.png, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\UI\Overlays\TargetHighlight_Side.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Other\SnowMacro.psd, D:\SteamLibrary\steamapps\common\RimWorld\RimWorld_Data\Resources\Textures\Weather\Overlays\SporeGlowOverlay.png
+16:59:02  INFO Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - localrail.automatic.poc
+16:59:06  INFO [RailOperationsSmoke] PASS LR_PlatformStation supports native placement rotation
+16:59:06  INFO [RailOperationsSmoke] PASS LR_PlatformStation rotated tracks match native occupied footprint
+16:59:06  INFO [RailOperationsSmoke] PASS LR_TwoPlatformStation supports native placement rotation
+16:59:06  INFO [RailOperationsSmoke] PASS LR_TwoPlatformStation rotated tracks match native occupied footprint
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FourPlatformStation supports native placement rotation
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FourPlatformStation rotated tracks match native occupied footprint
+16:59:06  INFO [RailOperationsSmoke] PASS LR_SinglePlatformWarehouse supports native placement rotation
+16:59:06  INFO [RailOperationsSmoke] PASS LR_SinglePlatformWarehouse rotated tracks match native occupied footprint
+16:59:06  INFO [RailOperationsSmoke] PASS LR_SinglePlatformWarehouse rotated storage avoids all platform rails
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FreightWarehouse supports native placement rotation
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FreightWarehouse rotated tracks match native occupied footprint
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FreightWarehouse rotated storage avoids all platform rails
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FourPlatformWarehouse supports native placement rotation
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FourPlatformWarehouse rotated tracks match native occupied footprint
+16:59:06  INFO [RailOperationsSmoke] PASS LR_FourPlatformWarehouse rotated storage avoids all platform rails
+16:59:06  INFO [RailOperationsSmoke] PASS rotated depot computes the north connected and south free rail portal
+16:59:06  INFO [RailOperationsSmoke] PASS same-building platforms and reused trunk create a shuttle: 
+16:59:06  INFO [RailOperationsSmoke] PASS shuttle stores distinct ordered visits to repeated physical cells
+16:59:06  INFO [RailOperationsSmoke] PASS another route still cannot occupy this shuttle's reserved track
+16:59:06  INFO [RailOperationsSmoke] PASS receiving depot defaults to low priority
+16:59:06  INFO [RailOperationsSmoke] PASS dispatch depot automatically gathers at preferred priority
+16:59:06  INFO [RailOperationsSmoke] PASS manual native priority selection disables automatic management
+16:59:06  INFO [RailOperationsSmoke] PASS explicit automatic management restores receiving priority
+16:59:06  INFO [RailOperationsSmoke] PASS native outbound journey starts without requesting a train
+16:59:06  INFO [RailOperationsSmoke] PASS vehicle cargo icons and summary represent actual steel and cloth
+16:59:10  INFO [RailOperationsSmoke] PASS automatic outbound rider boards turnback shuttle with original job
+16:59:12  INFO [RailOperationsSmoke] PASS topology refresh retains second physical visit instead of jumping to first
+16:59:12  INFO [RailOperationsSmoke] PASS save records rotated depot, two cargo stacks and repeated itinerary index
+16:59:17  INFO [RailOperationsSmoke] PASS turnback shuttle unloads both original stacks into rotated warehouse and delivers rider
+16:59:17  INFO [RailOperationsSmoke] PASS vehicle display clears when the actual cargo has unloaded
+16:59:17  INFO [RailOperationsSmoke] PASS mixed dispatch/receiving depot still treats delivered steel as low priority
+16:59:17  INFO [RailOperationsSmoke] PASS native hauling chooses ordinary stockpile and excludes preferred source depots
+16:59:17  INFO [RailOperationsSmoke] PASS native delivered-resource hauling job starts
+16:59:21  INFO [RailOperationsSmoke] PASS colonist unloads original steel into normal colony storage with delivery marker intact
+16:59:21  INFO [RailOperationsSmoke] PASS native partial stack split preserves delivery protection
+16:59:21  INFO [RailOperationsSmoke] PASS native stack merge propagates delivery protection to receiving stack
+16:59:21  INFO [RailOperationsSmoke] PASS native return journey starts without summoning a train
+16:59:22  INFO [RailOperationsSmoke] PASS automatic return rider boards opposite shuttle direction
+16:59:31  INFO [RailOperationsSmoke] PASS return rider arrives while permanent turnback train continues autonomous service
+16:59:31  INFO [RailOperationsSmoke] PASS delivered stock does not return to source or enter received-cargo shipment loops
+16:59:31  WARN Persistent allocation 0x20B70E56C08 (479616 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B722A6048 (8633076 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70ECCF38 (479616 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F569738 (400 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B72AF5048 (5737232 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F569C48 (400 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B73099048 (3357312 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B733D5048 (2877696 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70F420D8 (479616 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70FB7278 (479616 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D9BE98 (4 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59C368 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B7104F388 (7816 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BD98 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B710BF788 (294912 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59B9D8 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B7102E858 (7816 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59B918 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B710306F8 (7816 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711077A8 (250000 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71144858 (250000 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59C068 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71181908 (163840 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F5046E8 (952 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D33C58 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711A9928 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F15A8 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711AAD88 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BD68 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D9BE18 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D337F8 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711BADA8 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F3AD8 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711BC208 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59C398 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D9BE78 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D34838 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711CC228 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F4578 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711CD688 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BBB8 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F6670B8 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D33CF8 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711DD6A8 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F0B08 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711DEB08 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BC78 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F6670F8 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D32718 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711EEB28 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F5018 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711EFF88 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BF48 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70DAEB28 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D332F8 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B711FFFA8 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F5568 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71201408 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BF18 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70DAE908 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D34158 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71211428 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F7A98 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71212888 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BEB8 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70DAE9E8 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D348D8 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B712228A8 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F5AB8 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71223D08 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BCA8 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70DAE888 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D325D8 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71233D28 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5D8F6008 (1296 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B71235188 (65536 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B5F59BDC8 (24 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70DAEAA8 (8 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B70D32998 (128 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN Persistent allocation 0x20B712451A8 (5184 bytes, align 8) was not freed before shutdown.
+16:59:31  WARN 

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LR_Name>Local Rail POC</LR_Name>
+  <LR_Automatic>Automatic rail transit</LR_Automatic>
+  <LR_Diagnostics>Log transit diagnostics</LR_Diagnostics>
+  <LR_MinDistance>Minimum travel distance: {0} cells</LR_MinDistance>
+  <LR_SmoothAnimation>Smooth passenger and trolley animation</LR_SmoothAnimation>
+  <LR_PocLimits>Single-map rail with 1/2/4-platform stations and freight warehouses, 2–16 stop shuttle or loop routes, line colors and a Rail management tab. One train per route; routes reserve disjoint track cells. Four seats, twelve cargo stack slots. Platform dwell can be manual or automatic.</LR_PocLimits>
+  <LR_StationInfo>Stations on map: {0}. Connect tracks, then create an operating route.</LR_StationInfo>
+  <LR_TravelTo>Travel to station ({0}, {1}); use rail when beneficial</LR_TravelTo>
+  <LR_TravelToNamed>Travel to {0}; use rail when beneficial</LR_TravelToNamed>
+  <LR_RenameStation>Name this station to identify destinations.</LR_RenameStation>
+  <LR_PreferRail>Prefer rail for long journeys, accepting reasonable waits</LR_PreferRail>
+  <LR_CreateService>Create operating route</LR_CreateService>
+  <LR_CreateServiceDesc>Configure station/platform stops, shuttle or loop, route color and per-platform dwell.</LR_CreateServiceDesc>
+  <LR_NoOtherStation>No other player station</LR_NoOtherStation>
+  <LR_InvalidEndpoints>Two different player stations on this map are required</LR_InvalidEndpoints>
+  <LR_NoConnection>Stations are disconnected</LR_NoConnection>
+  <LR_NetworkInUse>This connected rail network already has a route</LR_NetworkInUse>
+  <LR_NetworkConflict>Networks merged: another shuttle has operating priority</LR_NetworkConflict>
+  <LR_StationMissing>A route station was removed</LR_StationMissing>
+  <LR_TrainMissing>Train destroyed or removed</LR_TrainMissing>
+  <LR_TrainOffRoute>Train is off the route: adjust tracks or recreate service</LR_TrainOffRoute>
+  <LR_TrackBlocked>Track blocked, waiting for recovery</LR_TrackBlocked>
+  <LR_ServicePaused>Service paused</LR_ServicePaused>
+  <LR_ServiceDwelling>Station dwell, loading and unloading</LR_ServiceDwelling>
+  <LR_ServiceRunning>Shuttle operating</LR_ServiceRunning>
+  <LR_NoService>No operating route assigned. Passengers do not summon trains.</LR_NoService>
+  <LR_ServiceInfo>Route: {0}\nStatus: {1}\nPassengers: {2}/{3}; waiting: {4}</LR_ServiceInfo>
+  <LR_PauseService>Pause service</LR_PauseService>
+  <LR_ResumeService>Resume service</LR_ResumeService>
+  <LR_ToggleServiceDesc>Pausing releases passengers and retains the train. Resume to continue the shuttle.</LR_ToggleServiceDesc>
+  <LR_SelectTrain>View train</LR_SelectTrain>
+  <LR_SelectTrainDesc>Jump to this route's existing train.</LR_SelectTrainDesc>
+  <LR_RemoveService>Remove route and train</LR_RemoveService>
+  <LR_RemoveServiceDesc>Resume passengers' original jobs and remove this service and train. Keep stations and tracks.</LR_RemoveServiceDesc>
+  <LR_ReplaceTrain>Replace train</LR_ReplaceTrain>
+  <LR_ReplaceTrainDesc>When the train is missing, allocate a free replacement at the starting terminal.</LR_ReplaceTrainDesc>
+  <LR_SetDwell>Set station dwell</LR_SetDwell>
+  <LR_RouteEditorHelp>Add ordered platform stops. Loops close back to the first stop; shuttles reverse at their ends.</LR_RouteEditorHelp>
+  <LR_None>none</LR_None>
+  <LR_LoadFreight>Load {0} for {1}</LR_LoadFreight>
+  <LR_DwellValue>Station dwell: {0} ticks ({1} game seconds)</LR_DwellValue>
+  <LR_InvalidRoute>Choose 2–16 distinct connected platforms. Shuttles may retrace their rails; loops require a closed path without repeated cells.</LR_InvalidRoute>
+  <LR_ConfirmRoute>Apply operating route</LR_ConfirmRoute>
+  <LR_EditRoute>Edit route</LR_EditRoute>
+  <LR_EditRouteDesc>Change ordered stops and station dwell. Release current passengers when applying.</LR_EditRouteDesc>
+  <LR_FreightStatus>Loading platform: {0}; destination: {1}; queued batches: {2}</LR_FreightStatus>
+  <LR_RouteEditor>Operating route</LR_RouteEditor>
+  <LR_Start>START</LR_Start>
+  <LR_AddStop>Add stop</LR_AddStop>
+  <LR_TrainFreight>Cargo slots: {0}/{1}</LR_TrainFreight>
+  <LR_DwellSeconds>{0} seconds</LR_DwellSeconds>
+  <LR_FreightDestination>Freight destination</LR_FreightDestination>
+  <LR_Stop>STOP</LR_Stop>
+  <LR_FreightDestinationDesc>Choose an exact destination platform on the same route. Automatic trains collect warehouse inventory using this default when no matching dispatch rule applies. At other stations, colonists manually deposit cargo using the right-click menu.</LR_FreightDestinationDesc>
+  <LR_End>END</LR_End>
+  <LR_SetDwellDesc>Enter game seconds or enable bounded automatic boarding/loading dwell for each platform.</LR_SetDwellDesc>
+  <LR_Resume>Resume</LR_Resume>
+  <LR_RemoveConfirm>Remove {0} and its train? Passengers resume work; freight is placed back on the map. Tracks and stations remain.</LR_RemoveConfirm>
+  <LR_NoRoutes>No routes match. Create a route after connecting station platforms.</LR_NoRoutes>
+  <LR_Reachable>Reachable ({0}): {1}</LR_Reachable>
+  <LR_AutoDwell>Automatically manage dwell at this platform</LR_AutoDwell>
+  <LR_Ports>Port A {0} · Port B {1}</LR_Ports>
+  <LR_Edit>Edit</LR_Edit>
+  <LR_LoopNotClosed>This loop has no valid closing track.</LR_LoopNotClosed>
+  <LR_Shuttle>Shuttle</LR_Shuttle>
+  <LR_MinAboveMax>Minimum dwell cannot exceed maximum dwell.</LR_MinAboveMax>
+  <LR_Routes>Routes</LR_Routes>
+  <LR_StationPlatform>{0} · P{1}</LR_StationPlatform>
+  <LR_ManagerHelp>Manage routes and individual platform connections in the Rail tab.</LR_ManagerHelp>
+  <LR_Reverse>Reverse direction</LR_Reverse>
+  <LR_NoStations>Build a station first</LR_NoStations>
+  <LR_LoadSummary>P {0}/4 · waiting {1} · cargo {2}/12</LR_LoadSummary>
+  <LR_ManagerNetworkRule>One train per route. Each track cell is reserved for one route.</LR_ManagerNetworkRule>
+  <LR_TimePresets>Manual dwell presets</LR_TimePresets>
+  <LR_ShowAllRoutes>Show all route colors on map</LR_ShowAllRoutes>
+  <LR_EditorNetworkHelp>Choose the exact platforms. Shuttles may retrace their own rails; loops must close. Different routes cannot share track cells.</LR_EditorNetworkHelp>
+  <LR_RouteColor>Line color</LR_RouteColor>
+  <LR_RouteName>Route name</LR_RouteName>
+  <LR_PlatformHelp>Platform numbering rotates with the station; by default south to north. Tracks remain independent and connect outside the building.</LR_PlatformHelp>
+  <LR_Locate>Locate</LR_Locate>
+  <LR_LineNumber>Line {0}</LR_LineNumber>
+  <LR_AutoDwellHelp>Wait at least the minimum, with boarding/loading time and a 1-second quiet period. Hold for nearby approaching passengers or loaders until the maximum. Full trains do not wait indefinitely.</LR_AutoDwellHelp>
+  <LR_Stations>Stations</LR_Stations>
+  <LR_Manager>Rail management</LR_Manager>
+  <LR_Forward>Forward direction</LR_Forward>
+  <LR_ManualSeconds>Manual dwell (game seconds)</LR_ManualSeconds>
+  <LR_PathConflict>Track overlaps another route</LR_PathConflict>
+  <LR_PlatformNumber>Platform {0}</LR_PlatformNumber>
+  <LR_DisconnectedPlatforms>No connecting path: {0} → {1}. Check real rail connections and stop order. Shuttles may retrace their rails; loops require a closed path without repeated cells.</LR_DisconnectedPlatforms>
+  <LR_MaxSeconds>Automatic maximum (game seconds)</LR_MaxSeconds>
+  <LR_Remove>Remove</LR_Remove>
+  <LR_PlatformRoutes>Assigned routes: {0}</LR_PlatformRoutes>
+  <LR_AutoRange>Auto {0}–{1} s</LR_AutoRange>
+  <LR_Loop>Loop</LR_Loop>
+  <LR_TrainAhead>Waiting for another train to clear the cell</LR_TrainAhead>
+  <LR_InvalidSeconds>Enter valid game seconds: manual/max 0.5–120, minimum 0.5–30.</LR_InvalidSeconds>
+  <LR_NoMap>Open a colony map to manage rail.</LR_NoMap>
+  <LR_Save>Save</LR_Save>
+  <LR_Pause>Pause</LR_Pause>
+  <LR_MinSeconds>Automatic minimum (game seconds)</LR_MinSeconds>
+  <LR_PlatformDwell>Platform {0}: {1}</LR_PlatformDwell>
+  <LR_OverlapRoute>Track already reserved by {0}. Choose another platform or track.</LR_OverlapRoute>
+  <LR_NewRoute>New route</LR_NewRoute>
+  <LR_DoorWaiting>Waiting for rail door to open / permission</LR_DoorWaiting>
+  <LR_RailDoorHelp>Automatic metal door with built-in track. Keep the portal straight. Trains open it in advance; no power required. Durability and speed follow the chosen metal.</LR_RailDoorHelp>
+  <LR_TrainRiders>Passengers: {0}</LR_TrainRiders>
+  <LR_DoorStraight>Rail door at {0} requires straight entry and exit. Move the curve outside the doorway.</LR_DoorStraight>
+  <LR_FreightOnly>Freight train</LR_FreightOnly>
+  <LR_MixedTrain>Passenger and freight</LR_MixedTrain>
+  <LR_WarehouseOrders>Automatic freight rules</LR_WarehouseOrders>
+  <LR_WarehouseHelp>Colonists haul stock into native storage rows. Automatic trains deliver it using the default destination or the first matching dispatch rule. Ordinary trains require manually deposited cargo. Full or rejecting targets keep cargo aboard and retry next visit. Configure accepted items in Storage.</LR_WarehouseHelp>
+  <LR_WarehouseStatus>Stored units: {0}. Automatic dispatch rules: {1}.</LR_WarehouseStatus>
+  <LR_ExportReceived>Allow onward dispatch of received cargo (check for cyclic rules)</LR_ExportReceived>
+  <LR_AddWarehouseOrder>Add dispatch destination</LR_AddWarehouseOrder>
+  <LR_NoWarehouseRoutes>Create a route through this warehouse first; each destination must be another stop on that route.</LR_NoWarehouseRoutes>
+  <LR_AllStoredCargo>All accepted cargo</LR_AllStoredCargo>
+  <LR_UnloadBlockedInfo>{0}: unloading at {1} is blocked or rejected. Remaining cargo stays aboard; the train continues and retries next visit.</LR_UnloadBlockedInfo>
+  <LR_ChangeWarehouseDestination>Change route / destination</LR_ChangeWarehouseDestination>
+  <LR_WarehouseRulePriority>{0}/32 rules; first matching rule wins.</LR_WarehouseRulePriority>
+  <LR_PickerDuplicate>Platform already in this route</LR_PickerDuplicate>
+  <LR_PickerHelp>Pan and zoom the map; click a rail row inside a station. Numbers match the list. Locate pans to a platform. Gray means selected or disconnected; yellow highlights the current platform. Right-click or Back cancels picking.</LR_PickerHelp>
+  <LR_PickerTitle>Choose a platform</LR_PickerTitle>
+  <LR_PickerBack>Back to route draft</LR_PickerBack>
+  <LR_CargoSlotsHelp>Each slot holds one native item stack. Hover to see its destination platform. Blocked cargo stays aboard until a later visit.</LR_CargoSlotsHelp>
+  <LR_CargoSlots>Train cargo · 12 slots</LR_CargoSlots>
+  <LR_ManualPriority>Storage priority: manual</LR_ManualPriority>
+  <LR_AutoStoragePriority>Automatic storage priority</LR_AutoStoragePriority>
+  <LR_ReceivePriority>Automatic storage: receiving depot (Low)</LR_ReceivePriority>
+  <LR_DispatchPriority>Automatic storage: dispatch depot (Preferred; delivered cargo treated as Low)</LR_DispatchPriority>
+  <LR_AutoStoragePriorityHelp>Without a destination or dispatch rules, use Low for receiving; a default destination or enabled rules uses Preferred for gathering. Delivered cargo is not reclaimed by automatic depots and can leave mixed depots for normal storage. Disable this option or change native priority to customize.</LR_AutoStoragePriorityHelp>
+  <LR_AccessRadius>Station access radius: {0} tiles</LR_AccessRadius>
+  <LR_PassengerTrainKind>Ordinary train</LR_PassengerTrainKind>
+  <LR_AutomaticTrainKind>Automatic train</LR_AutomaticTrainKind>
+  <LR_TrainKindsHelp>Ordinary trains carry passengers and manually deposited cargo. Automatic trains additionally collect warehouse inventory without riders. Set a warehouse default destination or dispatch rules; delivered cargo is protected against return loops. Existing trains and cargo survive type changes.</LR_TrainKindsHelp>
+  <LR_RailDecision>Rail travel decision</LR_RailDecision>
+  <LR_ReasonDisabled>Automatic passenger travel is disabled in mod settings.</LR_ReasonDisabled>
+  <LR_ReasonDrafted>Drafted colonists use their issued movement orders. Undraft to enable automatic commuting.</LR_ReasonDrafted>
+  <LR_ReasonJob>This pawn or current job is not eligible for safe automatic commuting. Supported travel includes hauling, mining, planting, research, cleaning and ordinary movement.</LR_ReasonJob>
+  <LR_ReasonAssigned>This colonist already has an approaching, waiting or riding assignment.</LR_ReasonAssigned>
+  <LR_ReasonNotMoving>There is no active walking path in a supported travel step. Recheck while the colonist is walking to the distant job.</LR_ReasonNotMoving>
+  <LR_ReasonShort>The current remaining journey is shorter than the minimum distance in mod settings.</LR_ReasonShort>
+  <LR_ReasonNoStations>No accessible station was found near the pawn or destination within the configured radius. Move a station closer or increase the access radius.</LR_ReasonNoStations>
+  <LR_ReasonNoService>Nearby stations lack an operating passenger-capable route. Check route creation, pause state and train availability. Freight-only trains do not accept passengers.</LR_ReasonNoService>
+  <LR_ReasonAccess>A safe walking connection to a served platform could not be found within the search budget. Check doors, walls, allowed areas and hazards.</LR_ReasonAccess>
+  <LR_ReasonUnsafe>The rail journey crosses a forbidden, dangerous or inaccessible cell.</LR_ReasonUnsafe>
+  <LR_ReasonCost>Walking currently wins: access walking or waiting exceeds the selected preference limits. Rail preference allows up to 80% access/egress walking and at most twice the direct walking estimate.</LR_ReasonCost>
+  <LR_ReasonSelected>A suitable train route is available. This diagnostic does not issue orders; normal movement will schedule boarding automatically.</LR_ReasonSelected>
+  <LR_DecisionContext>Job: {0} | access radius: {1} | stations near start / end: {2} / {3}</LR_DecisionContext>
+  <LR_DecisionCosts>Estimated game seconds — direct walk: {0}; walk to station: {1}; walk after arrival: {2}; train travel: {3}; waiting: {4}.</LR_DecisionCosts>
+  <LR_DecisionLine>Evaluated route: {0}</LR_DecisionLine>
+  <LR_DecisionRefresh>Re-evaluate now</LR_DecisionRefresh>
+  <LR_DecisionHelp>Select a colonist while walking and re-evaluate to inspect station access, operating routes and travel costs. This snapshot never changes their work or forces boarding. Enable Rail preference in mod settings for long-distance commuting.</LR_DecisionHelp>
+  <LR_DefaultInventoryDestination>Default inventory destination</LR_DefaultInventoryDestination>
+  <LR_DefaultInventoryHelp>Automatic trains collect inventory even without riders and deliver it here. Enabled, matching dispatch rules take priority; unmatched stock uses this default destination. Received cargo is not re-exported by default. Ordinary trains require manually deposited cargo.</LR_DefaultInventoryHelp>
+  <LR_AutomaticRequired>This dispatch rule requires an automatic train. Change the type in the route editor.</LR_AutomaticRequired>
+</LanguageData>
