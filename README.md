@@ -1,8 +1,6 @@
 # Local Rail：RimWorld 1.7 地图内轨道运营
 
-**0.10.0 · Pre-Alpha**。针对本机 **1.7.4977 rev1248 / Waylith CLR 10.0.10** 编译，无 DLC 依赖，依赖 Harmony 1.7。
-
-创意工坊发布文案：[发布资料与中英文简介](docs/workshop/publishing-notes.zh-CN.md)、[中文版正文](docs/workshop/description.zh-CN.bbcode.txt)、[英文版正文](docs/workshop/description.en.bbcode.txt)、[精简中英合并版](docs/workshop/description.bilingual.bbcode.txt)。正文使用 Steam 排版标记，三份介绍均按上传字段的 UTF-8 字节上限核对。
+**0.10.0 · Pre-Alpha**。针对本机 **1.7.4977 rev1248 / Waylith CLR 10.0.10** 编译
 
 提供单、双、四站台建筑、双轨模块、双轨门和单／双／四站台货运仓库，2–16 站往返／环线，名称与颜色，底部轨道管理标签页，以及数字输入／自动停站。每条路线一辆常驻列车，最多四个客位、12 格货物；可以选择货运专列或客货两用。轨道、车站和仓库继续免费，保留施工工时。金属列车门消耗材料，无电力、燃料或研究要求。
 
